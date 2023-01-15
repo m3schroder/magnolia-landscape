@@ -12,8 +12,11 @@
 </script>
 
 <main class="flex flex-col justify-end h-screen ">
-	<content class="h-full flex flex-col items-center gap-7  w-screen overflow-auto py-5">
-		{#if $page.route.id != '/'}<Card img={'/logo.jpeg'} class="mx-auto w-full h-fit p-3" />
+	<content
+		class="h-full flex flex-col items-center gap-9  w-screen overflow-auto pt-5"
+		style={`padding-bottom: ${navHeight}px;`}
+	>
+		{#if $page.route.id != '/'}<Card img={'/logo.jpeg'} class="mx-auto w-8/12 h-32 p-2" />
 		{/if}
 		<slot />
 		<Map />

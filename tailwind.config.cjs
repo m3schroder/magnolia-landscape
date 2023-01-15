@@ -1,11 +1,20 @@
 const config = {
 	content: [
 		"./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
-		"./src/**/*.{html,js,svelte,ts}",
+		"./src/routes/**/*.{html,js,svelte,ts}",
+		"./src/ui/**/*.{html,js,svelte,ts}"
 	],
-	important: true,
 	theme: {
 		extend: {
+			keyframes: {
+				rotate180: {
+					'0%': { transform: 'rotate(180deg)' },
+					'100%': { transform: 'rotate(0deg)' }
+				}
+			},
+			animation: {
+				'rotate-180': 'rotate180 300ms linear infinite'
+			},
 			borderWidth: {
 				"1": "1px"
 			},
@@ -13,11 +22,11 @@ const config = {
 				neu: '2px 3px 0px #96969625',
 			},
 			colors: {
-				"primary": {
-					DEFAULT: "#ad8428"
-				},
+				// "primary": {
+				// 	DEFAULT: "#ad8428"
+				// },
 				"secondary": {
-					DEFAULT: "#AEAEAE",
+					DEFAULT: "#A1A1A1",
 					dark: "#A1A1A1"
 				},
 				"paper": {

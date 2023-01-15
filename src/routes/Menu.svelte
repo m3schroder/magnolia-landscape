@@ -15,9 +15,21 @@
 		color="alternative"
 		class="bg-paper shadow-neu mb-4 flex-col flex gap-2 border-1 border-secondary-dark"
 	>
-		<Button class="bg-secondary shadow-neu  my-3">Home</Button>
-		<Button class="bg-secondary shadow-neu  my-3">Residential</Button>
-		<Button class="bg-secondary shadow-neu  my-3">Commercial</Button>
-		<Button class="bg-primary shadow-neu  my-3">Get Quote</Button>
+		<Button
+			color="alternative"
+			href="/"
+			on:click={() => currentNav.update((val) => (val = undefined))}>Home</Button
+		>
+		<Button
+			color="alternative"
+			href="/residential"
+			on:click={() => currentNav.update((val) => (val = undefined))}>Residential</Button
+		>
+		<Button
+			color="alternative"
+			href="/commercial"
+			on:click={() => currentNav.update((val) => (val = undefined))}>Commercial</Button
+		>
+		<Button on:click={() => currentNav.update((val) => (val = 'quote'))}>Get Quote</Button>
 	</Card>
 </Drawer>

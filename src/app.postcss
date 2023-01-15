@@ -8,8 +8,8 @@
 	*{
 		@appy text-text;
 	}
-	button{
-		@apply hover:bg-red-500 !important;
+	p{
+		@apply text-lg
 	}
 }
 @layer utilities {
@@ -17,6 +17,25 @@
      @apply flex justify-center items-center;
   }
   .text-color{
-     @apply text-neutral-600;
+     @apply text-neutral-700;
   }
+  .header-pb{
+     @apply mb-5;
+  }
+}
+
+@layer components{
+	.card{
+		@apply w-11/12 p-4 gap-4;
+	}
+}
+
+
+@keyframes rotate-180{
+	0%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
 }

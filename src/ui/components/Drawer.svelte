@@ -13,8 +13,9 @@
 
 <Drawer
 	placement="bottom"
+	activateClickOutside={false}
 	class="!z-50 mb-9 !bg-transparent rounded-t-lg"
-	style={`bottom: ${navHeight}px;`}
+	style={`bottom: ${navHeight - 60}px;`}
 	backdrop={true}
 	bgColor="bg-neutral-400 transition-all opacity-100 duration-500"
 	width="w-full"
