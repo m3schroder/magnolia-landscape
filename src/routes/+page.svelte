@@ -29,3 +29,13 @@
 		>
 	</Button>
 </Card>
+
+<section class="flex flex-row gap-5 w-full flex-wrap px-8 justify-around">
+	{#each ['Hardscaping', 'Tree Trimming', 'Tree Removal', 'Pressure Washing', 'Sealing', 'Snow Services', 'Landscaping'] as service}
+		<Button
+			large={true}
+			class={`cursor-pointer transition-colors shadow-neu hover:bg-primary px-5 grow py-3 rounded-full bg-secondary text-white`}
+			>{service}</Button
+		>
+	{/each}
+</section>
