@@ -1,8 +1,29 @@
-<script>
+<script lang="ts">
+	import { page } from '$app/stores';
+	import Call from './Call.svelte';
+	import Map from './Map.svelte';
+	import Menu from './Menu.svelte';
+	import QuoteForm from './QuoteForm.svelte';
 	import '../app.postcss';
 	import Navbar from './Navbar.svelte';
+	import { Card } from 'flowbite-svelte';
+
+	$: navHeight = 60;
 </script>
 
-<slot />
-
-<Navbar />
+<main class="flex flex-col justify-end h-screen ">
+	<content
+		class="h-full gap-7 tracking-loose grid grid-flow-row w-screen items-start overflow-auto py-5"
+	>
+		{#if $page.route.id != '/'}<Card img={'/logo.jpeg'} class="mx-auto w-full h-fit p-3" />
+		{/if}
+		<slot />
+		<Map />
+	</content>
+	<Navbar bind:navHeight />
+	<div class={`fixed w-full z-10 flex-center`}>
+		<QuoteForm bind:navHeight />
+		<Menu bind:navHeight />
+		<Call bind:navHeight />
+	</div>
+</main>

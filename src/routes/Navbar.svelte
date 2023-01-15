@@ -1,76 +1,37 @@
-<script>
-	import { ButtonGroup, Drawer, Button, CloseButton, A } from 'flowbite-svelte';
-	import { sineInOut } from 'svelte/easing';
-	import { Envelope } from 'svelte-heros-v2';
+<script lang="ts">
+	import { currentNav } from '@lib/menuStore';
+	import { Bars3, Phone, Envelope, ArrowDown } from 'svelte-heros-v2';
 
-	let hidden8 = true;
-	let transitionParamsBottom = {
-		y: 320,
-		duration: 300,
-		easing: sineInOut
-	};
+	export let navHeight;
+
+	let selected: string | undefined = undefined;
+	currentNav.subscribe((val) => (selected = val));
+
+	const menu = [
+		{ element: Phone, name: 'call' },
+		{ element: Bars3, name: 'menu' },
+		{ element: Envelope, name: 'quote' }
+	];
 </script>
 
-<div class="fixed bottom-0 w-full">
-	<div class="flex bg-white py-3 border-t-2 border-slate-300 flex-row justify-evenly relative">
-		<Button on:click={() => (hidden8 = false)}>Residential</Button>
-		<div class="w-32 flex-center">
-			<Button class="!rounded-full h-16 w-16"><Envelope /></Button>
-		</div>
-		<Button>Commercial</Button>
-	</div>
-</div>
-
-<Drawer
-	placement="bottom"
-	class="!z-10 border-t-2 border-slate-300"
-	backdrop={false}
-	width="w-full"
-	transitionType="fly"
-	transitionParams={transitionParamsBottom}
-	bind:hidden={hidden8}
-	id="sidebar8"
+<div
+	bind:clientHeight={navHeight}
+	id="navbar"
+	class="z-40 relative flex-center bg-white border-t-1 border-secondary-dark w-full gap-5"
 >
-	<div class="flex items-center">
-		<h5
-			id="drawer-label"
-			class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"
-		>
-			<svg
-				class="w-5 h-5 mr-2"
-				aria-hidden="true"
-				fill="currentColor"
-				viewBox="0 0 20 20"
-				xmlns="http://www.w3.org/2000/svg"
-				><path
-					fill-rule="evenodd"
-					d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-					clip-rule="evenodd"
-				/></svg
-			>Info
-		</h5>
-		<CloseButton on:click={() => (hidden8 = true)} class="mb-4 dark:text-white" />
-	</div>
-	<p class="max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400">
-		Supercharge your hiring by taking advantage of our <a
-			href="/"
-			class="text-blue-600 underline dark:text-blue-500 hover:no-underline">limited-time sale</a
-		> for Flowbite Docs + Job Board. Unlimited access to over 190K top-ranked candidates and the #1 design
-		job board.
-	</p>
-	<Button color="light" href="/">Learn more</Button>
-	<Button href="/" class="ml-2"
-		>Get access <svg
-			class="w-4 h-4 ml-1"
-			aria-hidden="true"
-			fill="currentColor"
-			viewBox="0 0 20 20"
-			xmlns="http://www.w3.org/2000/svg"
-			><path
-				fill-rule="evenodd"
-				d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-				clip-rule="evenodd"
-			/></svg
-		></Button
-	>
-</Drawer>
+	{#each menu as Item}
+		{#if selected === Item.name}
+			<ArrowDown
+				on:click={() => currentNav.set(undefined)}
+				size={'30'}
+				class="cursor-pointer active:-translate-y-4 shadow-neu transition-all h-14 w-14 text-neutral-600 p-3 bg-white rounded-full border-1 border-secondary-dark -translate-y-5 !rounded-full overflow-clip"
+			/>
+		{:else}
+			<Item.element
+				on:click={() => currentNav.update((val) => (val = Item.name))}
+				size={'30'}
+				class="cursor-pointer active:-translate-y-4 shadow-neu transition-all h-14 w-14 text-neutral-600 p-3 bg-white rounded-full border-1 border-secondary-dark -translate-y-5 !rounded-full overflow-clip"
+			/>
+		{/if}
+	{/each}
+</div>

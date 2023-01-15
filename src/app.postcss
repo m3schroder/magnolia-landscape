@@ -4,8 +4,16 @@
 @tailwind utilities;
 
 
+@layer base{
+	*{
+		@appy text-text;
+	}
+}
 @layer utilities {
   .flex-center{
      @apply flex justify-center items-center;
+  }
+  .text-color{
+     @apply text-neutral-600;
   }
 }
