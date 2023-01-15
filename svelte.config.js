@@ -18,7 +18,6 @@ const config = {
 			"@element": path.resolve("./src/ui/elements"),
 			"@component": path.resolve("./src/ui/components"),
 			"@src": path.resolve("./src"),
-
 		}
 	}
 };

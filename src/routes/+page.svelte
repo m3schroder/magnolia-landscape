@@ -6,8 +6,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Magnolia Valley Landscape</title>
+	<meta name="Home page for magnolia valley" />
 </svelte:head>
 
 <Card img={'/logo.jpeg'} class="card">

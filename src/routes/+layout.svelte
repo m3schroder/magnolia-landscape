@@ -17,7 +17,7 @@
 		style={`padding-bottom: ${navHeight}px;`}
 	>
 		{#if $page.route.id != '/'}
-			<Card img={'/logo.jpeg'} class="mx-auto w-8/12 h-32 p-2" />
+			<Card img={'/logo.jpeg'} class="mx-auto w-8/12 h-fit p-2" />
 		{/if}
 		<slot />
 		<Map />

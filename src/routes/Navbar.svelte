@@ -13,8 +13,6 @@
 		{ icon: Bars3, name: 'menu' },
 		{ icon: ChatBubbleBottomCenter, name: 'quote' }
 	];
-
-	document.addEventListener('window');
 </script>
 
 <div
@@ -30,7 +28,7 @@
 			class="w-14 h-14 p-0 overflow-clip"
 			on:click={() => currentNav.set(selected == Item.name ? undefined : Item.name)}
 		>
-			{#if Item.name == selected}
+			{#if Item.name == selected && Item.name != 'call'}
 				<ArrowDown />
 			{:else}
 				<Item.icon />
