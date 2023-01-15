@@ -16,7 +16,8 @@
 		class="h-full flex flex-col items-center gap-9  w-screen overflow-auto pt-5"
 		style={`padding-bottom: ${navHeight}px;`}
 	>
-		{#if $page.route.id != '/'}<Card img={'/logo.jpeg'} class="mx-auto w-8/12 h-32 p-2" />
+		{#if $page.route.id != '/'}
+			<Card img={'/logo.jpeg'} class="mx-auto w-8/12 h-32 p-2" />
 		{/if}
 		<slot />
 		<Map />
@@ -25,6 +26,6 @@
 	<div class={`fixed w-full z-10 flex-center`}>
 		<QuoteForm bind:navHeight />
 		<Menu bind:navHeight />
-		<Call bind:navHeight />
+		<!-- <Call bind:navHeight /> -->
 	</div>
 </main>

@@ -17,8 +17,8 @@
 	>
 		<h3 class="text-color font-normal mx-auto text-lg">Give us a call?</h3>
 		<div class="grid grid-cols-2 gap-5">
-			<Button href="tel:615-796-5388" class="w-full">Yes</Button>
-			<Button color="alternative" on:click={() => currentNav.set(undefined)}>No</Button>
+			<Button class="w-full">Yes</Button>
+			<Button color="alternative">currentNav.set(undefined)}>No</Button>
 		</div>
 	</Card>
 </Drawer>
