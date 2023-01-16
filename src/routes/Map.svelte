@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { Button, ButtonGroup, Card } from 'flowbite-svelte';
+	import { Button, Card } from 'flowbite-svelte';
 	import { Envelope, Phone } from 'svelte-heros-v2';
-	import Facebook from '@element/Facebook.svelte';
 	const cx = 'w-min flex gap-5 items-center !p-2';
 </script>
 

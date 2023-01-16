@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Drawer from '@component/Drawer.svelte';
+	import Drawer from '@ui/Drawer.svelte';
 	import { currentNav } from '@lib/menuStore';
 	import { Button, Card } from 'flowbite-svelte';
 
@@ -13,7 +13,7 @@
 <Drawer {navHeight} {hidden}>
 	<Card
 		color="alternative"
-		class="bg-paper shadow-neu mb-4 flex-col flex gap-2 border-1 border-secondary-dark"
+		class="bg-paper shadow-neu mb-4 flex-col flex w-72 gap-2 border-1 border-secondary-dark"
 	>
 		<Button
 			color="alternative"

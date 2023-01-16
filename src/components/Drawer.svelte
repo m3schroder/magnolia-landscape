@@ -13,8 +13,9 @@
 
 <Drawer
 	placement="bottom"
-	activateClickOutside={false}
-	class="!z-50 mb-9 !bg-transparent rounded-t-lg"
+	activateClickOutside={true}
+	id="drawer"
+	class="!bg-transparent w-fit mx-auto !z-50 mb-9 rounded-t-lg"
 	style={`bottom: ${navHeight - 60}px;`}
 	backdrop={true}
 	bgColor="bg-neutral-400 transition-all opacity-100 duration-500"

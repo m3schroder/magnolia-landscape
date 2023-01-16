@@ -2,7 +2,7 @@ const config = {
 	content: [
 		"./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
 		"./src/routes/**/*.{html,js,svelte,ts}",
-		"./src/ui/**/*.{html,js,svelte,ts}"
+		"./src/components/**/*.{html,js,svelte,ts}"
 	],
 	theme: {
 		extend: {

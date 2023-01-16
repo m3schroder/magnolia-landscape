@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { currentNav } from '@lib/menuStore';
 	import { Button, Card } from 'flowbite-svelte';
-	import Drawer from '@component/Drawer.svelte';
+	import Drawer from '@ui/Drawer.svelte';
 
 	export let navHeight: number;
 	export let hidden = true;
