@@ -4,6 +4,11 @@ const config = {
 		"./src/routes/**/*.{html,js,svelte,ts}",
 		"./src/components/**/*.{html,js,svelte,ts}"
 	],
+	safelist: [
+		"!bg-amber-100",
+		"!bg-neutral-100",
+		"!bg-orange-100"
+	],
 	theme: {
 		extend: {
 			keyframes: {

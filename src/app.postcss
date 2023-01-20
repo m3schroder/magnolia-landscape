@@ -5,14 +5,29 @@
 
 
 @layer base{
+	html{
+		@apply bg-gray-50
+	}
 	*{
-		@appy text-text;
+		/* @apply text-color; */
+	}
+	strong{
+		@apply text-gray-600;
+	}
+	h1,h2,h3,h4,h5{
+		@apply text-gray-500;
 	}
 	p{
 		@apply text-lg
 	}
 }
 @layer utilities {
+	.fakeclass{
+		@apply bg-orange-300 bg-yellow-300
+	}
+	.break-space{
+		@apply mb-5
+	}
   .flex-center{
      @apply flex justify-center items-center;
   }
@@ -25,11 +40,35 @@
 }
 
 @layer components{
+	.title{
+		@apply text-xl text-center;
+	}
+	#drawer::after{
+		@apply bg-black  w-screen h-screen fixed top-0 left-0 z-[-1];
+	}
+	.action-card{
+		@apply  card flex flex-col !bg-blue-700 text-white justify-center items-center !px-12 w-fit;
+	}
+	.action-card ul{
+		@apply flex flex-col gap-2 text-white list-disc text-lg
+	}
+	.action-card li{
+		@apply pl-2 mx-5
+	}
 	.card{
 		@apply w-11/12 p-4 gap-4;
 	}
 }
 
+
+@keyframes opacity{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: .3;
+	}
+}
 
 @keyframes rotate-180{
 	0%{

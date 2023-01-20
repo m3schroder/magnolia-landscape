@@ -25,7 +25,7 @@
 			color="alternative"
 			pill={true}
 			href={Item.href}
-			class="w-14 h-14 p-0 overflow-clip"
+			class="w-14 h-14 p-0 overflow-clip drop-shadow-lg"
 			on:click={() => currentNav.set(selected == Item.name ? undefined : Item.name)}
 		>
 			{#if Item.name == selected && Item.name != 'call'}

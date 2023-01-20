@@ -1,4 +1,5 @@
 <script lang="ts">
+	import FreeQuote from '@ui/FreeQuote.svelte';
 	import { Card } from 'flowbite-svelte';
 	import { Li, Heading, List } from 'flowbite-svelte';
 </script>
@@ -32,6 +33,8 @@
 		{/each}
 	</List>
 </Card>
+
+<FreeQuote class={'w-1/3'} />
 <Card class="card">
 	<h3 class="text-center w-full header-pb">Process</h3>
 	<p class="text-start p-2">
@@ -52,8 +55,10 @@
 		We cover all of your properties needs , we have designed our commercial division with one goal
 		in mind. That's to be a one stop shop for all of our clients and future clients.
 	</p>
-	<strong>
-		Give us a call to get your commercial property back where it needs be with a team that cares.
-		Our commercial clients put their trust in us to handle everything from A to Z.
-	</strong>
+	<p>
+		<strong>
+			Give us a call to get your commercial property back where it needs be with a team that cares.
+			Our commercial clients put their trust in us to handle everything from A to Z.
+		</strong>
+	</p>
 </Card>

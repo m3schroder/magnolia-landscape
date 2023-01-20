@@ -1,7 +1,8 @@
 <script>
 	import { Card, Button } from 'flowbite-svelte';
-	import { currentNav } from '@lib/menuStore';
+	import FreeQuote from '@ui/FreeQuote.svelte';
 	import { ArrowSmallRight } from 'svelte-heros-v2';
+	import links from '$lib/links';
 	export const label = undefined;
 </script>
 
@@ -10,26 +11,25 @@
 	<meta name="Home page for magnolia valley" />
 </svelte:head>
 
-<Card img={'/logo.jpeg'} class="card">
+<Card class="card">
 	<h5 class="my-7 text-4xl flex flex-col gap-2">
 		<h2>Affordable</h2>
 		<h2>Hassle free</h2>
 		<h2>Quality driven</h2>
 		<h1 class="font-bold">Landscaping</h1>
 	</h5>
-	<Button size="md" class="w-2/3" on:click={() => currentNav.update((val) => (val = 'quote'))}
-		>Get Free Quote <ArrowSmallRight /></Button
-	>
+	<FreeQuote />
 </Card>
 
 <Card class="flex flex-col w-11/12 card flex-wrap px-8 justify-start">
 	<h3 class="w-full text-center header-pb">Services</h3>
-	{#each ['Package Deals', 'Irrigation', 'Landscape Design & Installation', 'Pressure Washing', 'Hardscaping', 'Snow Services', 'Grading & Drainage Solutions', 'Pave Sealing'] as service}
+	{#each links as link}
 		<Button
 			color="primary"
+			href={link.path}
 			size="xs"
 			class={`cursor-pointer grow text-sm transition-colors  hover:bg-primary rounded-full bg-secondary text-white`}
-			>{service}</Button
+			>{link.title}</Button
 		>
 	{/each}
 </Card>

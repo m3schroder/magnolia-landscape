@@ -3,6 +3,7 @@
 	import FormInput from '@ui/FormInput.svelte';
 	import { Button, Card, Label, Textarea } from 'flowbite-svelte';
 	import Drawer from '@ui/Drawer.svelte';
+	import { enhance } from '$app/forms';
 
 	export let navHeight: number;
 	export let hidden = true;
@@ -16,6 +17,7 @@
 		update[i][1] = !update[i][1];
 		services = update;
 	};
+
 	$: services = [
 		['Hardscaping', false],
 		['Tree Trimming', false],
@@ -27,15 +29,28 @@
 	];
 </script>
 
-<Drawer {navHeight} {hidden}>
+<Drawer {navHeight} wrapping="quote">
 	<Card color="alternative" class="bg-paper shadow-neu mb-4  border-1 border-secondary-dark">
-		<form method="post" action="/" class="flex-col flex gap-2">
+		<form
+			method="post"
+			action="/"
+			class="flex-col flex gap-2"
+			use:enhance={({ form, data, action, cancel }) => {
+				services.forEach((s) => {
+					if (s[1]) data.append('services[]', s[0].toString());
+				});
+				// return async ({ result, update }) => {
+
+				// 	// `result` is an `ActionResult` object      // `update` is a function which triggers the logic that would be triggered if this callback wasn't set    };
+				// };
+			}}
+		>
 			<div class="flex justify-between flex-row gap-3">
-				<FormInput label={'First Name'} id={'first'} />
-				<FormInput label={'Last Name'} id={'last'} />
+				<FormInput label={'First Name'} id={'first'} value={'Matthew'} />
+				<FormInput label={'Last Name'} id={'last'} value="Schroder" />
 			</div>
-			<FormInput label={'Phone'} id={'number'} type={'tel'} />
-			<FormInput label={'Email'} id={'email'} type={'email'} />
+			<FormInput label={'Phone'} id={'number'} type={'tel'} value="615-663-5650" />
+			<FormInput label={'Email'} id={'email'} type={'email'} value="m3schroder@gmail.com" />
 			<Label class="text-neutral-500 mb-1">Select Services</Label>
 			<div class="flex flex-row flex-wrap gap-4">
 				{#each services as service, i}
@@ -50,8 +65,8 @@
 				{/each}
 			</div>
 			<Label class="text-neutral-500 mt-3">Additional Info</Label>
-			<Textarea id={'email'} />
-			<Button class="mt-7" type="submit">Get Quote</Button>
+			<Textarea id={'additional'} name="additional" value="No additional info" />
+			<Button class="mt-7" type="submit">Send Quote Request</Button>
 		</form>
 	</Card>
 </Drawer>
