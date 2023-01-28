@@ -1,5 +1,5 @@
 const links = [
-	{ title: 'Residential Packages', path: 'residential' },
+	// { title: 'Residential Packages', path: 'residential' },
 	{ title: 'Irrigation', path: 'irrigation' },
 	{ title: 'Landscape Design', path: 'landscaping' },
 	{ title: 'Pressure Washing', path: 'pressurewash' },

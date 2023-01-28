@@ -46,11 +46,11 @@
 			}}
 		>
 			<div class="flex justify-between flex-row gap-3">
-				<FormInput label={'First Name'} id={'first'} value={'Matthew'} />
-				<FormInput label={'Last Name'} id={'last'} value="Schroder" />
+				<FormInput label={'First Name'} id={'first'} />
+				<FormInput label={'Last Name'} id={'last'} />
 			</div>
-			<FormInput label={'Phone'} id={'number'} type={'tel'} value="615-663-5650" />
-			<FormInput label={'Email'} id={'email'} type={'email'} value="m3schroder@gmail.com" />
+			<FormInput label={'Phone'} id={'number'} type={'tel'} />
+			<FormInput label={'Email'} id={'email'} type={'email'} />
 			<Label class="text-neutral-500 mb-1">Select Services</Label>
 			<div class="flex flex-row flex-wrap gap-4">
 				{#each services as service, i}
@@ -65,7 +65,7 @@
 				{/each}
 			</div>
 			<Label class="text-neutral-500 mt-3">Additional Info</Label>
-			<Textarea id={'additional'} name="additional" value="No additional info" />
+			<Textarea id={'additional'} name="additional" />
 			<Button class="mt-7" type="submit">Send Quote Request</Button>
 		</form>
 	</Card>

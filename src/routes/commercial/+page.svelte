@@ -34,7 +34,7 @@
 	</List>
 </Card>
 
-<FreeQuote class={'w-1/3'} />
+<FreeQuote />
 <Card class="card">
 	<h3 class="text-center w-full header-pb">Process</h3>
 	<p class="text-start p-2">

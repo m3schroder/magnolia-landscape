@@ -15,17 +15,17 @@
 	];
 </script>
 
+<!-- border-1 border-secondary-dark bg-paper border-opacity-50 shadow-neu -->
 <div
 	bind:clientHeight={navHeight}
 	id="navbar"
-	class="z-40 fixed bottom-0 flex-center h-fit py-3 bg-transparent w-full gap-5"
+	class="card z-40 fixed bottom-2 flex-center w-fit gap-5 px-12 !py-2 rounded-xl "
 >
+	<!-- <Button color="alternative" class="w-28" href="tel:615-796-5388">Call</Button> -->
 	{#each menu as Item}
 		<Button
-			color="alternative"
 			pill={true}
-			href={Item.href}
-			class="w-14 h-14 p-0 overflow-clip drop-shadow-lg"
+			class="w-14 h-14 p-0 overflow-clip drop-shadow-lg transition-colors border-1 border-secondary-dark"
 			on:click={() => currentNav.set(selected == Item.name ? undefined : Item.name)}
 		>
 			{#if Item.name == selected && Item.name != 'call'}
@@ -35,4 +35,15 @@
 			{/if}
 		</Button>
 	{/each}
+	<!-- <Button
+		class="w-28"
+		color="alternative"
+		on:click={() => currentNav.set(selected == 'quote' ? undefined : 'quote')}
+	>
+		{#if 'quote' == selected}
+			<ArrowDown />
+		{:else}
+			Get Quote
+		{/if}
+	</Button> -->
 </div>

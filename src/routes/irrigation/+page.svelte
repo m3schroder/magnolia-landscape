@@ -6,7 +6,7 @@
 
 <PageTitle title="Irrigation" />
 
-<Card class="card">
+<Card class="card-image" img="/sprinkler.jpeg">
 	<p>
 		No matter how many hours you spend caring for your yard, you're still always concerned with
 		whether or not your plants are receiving enough water.

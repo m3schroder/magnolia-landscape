@@ -11,8 +11,8 @@
 	<meta name="Home page for magnolia valley" />
 </svelte:head>
 
-<Card class="card">
-	<h5 class="my-7 text-4xl flex flex-col gap-2">
+<Card img="/dopeyard.jpeg" class="card-image">
+	<h5 class="mt-2 mb-5 text-4xl flex flex-col gap-2">
 		<h2>Affordable</h2>
 		<h2>Hassle free</h2>
 		<h2>Quality driven</h2>
@@ -21,14 +21,14 @@
 	<FreeQuote />
 </Card>
 
-<Card class="flex flex-col w-11/12 card flex-wrap px-8 justify-start">
+<Card class="flex flex-col card flex-wrap pb-10 justify-start">
 	<h3 class="w-full text-center header-pb">Services</h3>
 	{#each links as link}
 		<Button
-			color="primary"
+			color="blue"
 			href={link.path}
 			size="xs"
-			class={`cursor-pointer grow text-sm transition-colors  hover:bg-primary rounded-full bg-secondary text-white`}
+			class={`cursor-pointer grow text-sm transition-colors  hover:bg-primary rounded-full opacity-70 `}
 			>{link.title}</Button
 		>
 	{/each}

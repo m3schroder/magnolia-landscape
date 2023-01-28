@@ -5,4 +5,4 @@
 </script>
 
 <h1 class="title">{title}</h1>
-<Hr />
+<Hr hrClass="w-2/3" />

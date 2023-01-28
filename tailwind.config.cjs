@@ -27,9 +27,19 @@ const config = {
 				neu: '2px 3px 0px #96969625',
 			},
 			colors: {
-				// "primary": {
-				// 	DEFAULT: "#ad8428"
-				// },
+				'blue': {
+					DEFAULT: "#c3a765",
+					'50': '#fbfaf1',
+					'100': '#f5f2df',
+					'200': '#e9e2bf',
+					'300': '#dbcd96',
+					'400': '#cbb26c',
+					'500': '#c5a55c',
+					'600': '#b38943',
+					'700': '#956e39',
+					'800': '#785834',
+					'900': '#62492c',
+				},
 				"secondary": {
 					DEFAULT: "#A1A1A1",
 					dark: "#A1A1A1"

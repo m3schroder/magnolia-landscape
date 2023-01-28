@@ -12,14 +12,14 @@
 		color="alternative"
 		class="bg-paper shadow-neu mb-4 flex-col flex w-72 gap-2 border-1 border-secondary-dark"
 	>
-		{#each links as link}
+		{#each links.sort() as link}
 			<Button
 				color="alternative"
 				href={link.path}
 				on:click={() => currentNav.update((val) => (val = undefined))}>{link.title}</Button
 			>
 		{/each}
-		<Button href="/">Home</Button>
+		<Button href="/" on:click={() => currentNav.update((val) => (val = undefined))}>Home</Button>
 		<Button on:click={() => currentNav.update((val) => (val = 'quote'))}>Get Quote</Button>
 	</Card>
 </Drawer>
