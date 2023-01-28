@@ -25,6 +25,7 @@
 	{#each menu as Item}
 		<Button
 			pill={true}
+			href={Item.href}
 			class="w-14 h-14 p-0 overflow-clip drop-shadow-lg transition-colors border-1 border-secondary-dark"
 			on:click={() => currentNav.set(selected == Item.name ? undefined : Item.name)}
 		>

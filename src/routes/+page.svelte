@@ -41,7 +41,7 @@
 		of the ine when it comes to <strong>quality</strong> and <strong>responsiveness</strong>.
 	</p>
 	<p class="mt-3 mb-2">Reach out and let us know how we can help!</p>
-	<Button href="/commercial" size="xs" class="w-fit flex-center gap-7"
+	<Button href="/commercial" size="xs" class="w-fit px-6 flex-center gap-7"
 		>Lean more <ArrowSmallRight /></Button
 	>
 </Card>

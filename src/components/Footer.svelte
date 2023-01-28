@@ -10,7 +10,7 @@
 
 <Footer footerType="logo">
 	<div class="sm:flex sm:items-center sm:justify-between">
-		<div class="mx-auto mb-5 w-fit">
+		<div class="mx-auto mb-3 w-fit">
 			<FooterBrand src="/magnolia-logo.png" alt="Magnolia Logo" name="Magnolia Valley Landscape" />
 		</div>
 		<!-- <FooterLinkGroup
