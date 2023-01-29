@@ -16,11 +16,7 @@
 </script>
 
 <!-- border-1 border-secondary-dark bg-paper border-opacity-50 shadow-neu -->
-<div
-	bind:clientHeight={navHeight}
-	id="navbar"
-	class="card z-40 fixed bottom-2 flex-center w-fit gap-5 px-12 !py-2 rounded-xl "
->
+<div bind:clientHeight={navHeight} id="navbar" class="mobile-nav lg:desktop-nav">
 	<!-- <Button color="alternative" class="w-28" href="tel:615-796-5388">Call</Button> -->
 	{#each menu as Item}
 		<Button

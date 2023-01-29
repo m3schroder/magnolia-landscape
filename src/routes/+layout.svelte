@@ -21,7 +21,7 @@
 
 <main class="flex flex-col  items-center h-screen overflow-auto" bind:this={topLevel}>
 	<content
-		class="h-fit flex flex-col items-center gap-9 lg:w-1/3 w-screen pt-5 mb-24"
+		class="h-fit flex flex-col items-center gap-9 lg:w-2/3 w-screen pt-5 mb-24"
 		style={`padding-bottom: ${navHeight}px;`}
 	>
 		<a href="/">

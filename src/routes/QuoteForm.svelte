@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { currentNav } from '@lib/menuStore';
 	import FormInput from '@ui/FormInput.svelte';
-	import { Button, Card, Label, Textarea } from 'flowbite-svelte';
+	import { Button, Card, Label, Spinner, Textarea } from 'flowbite-svelte';
 	import Drawer from '@ui/Drawer.svelte';
 	import { enhance } from '$app/forms';
 
 	export let navHeight: number;
 	export let hidden = true;
+	$: loading = false;
 
 	currentNav.subscribe((val) => {
 		hidden = val === 'quote' ? false : true;
@@ -30,19 +31,31 @@
 </script>
 
 <Drawer {navHeight} wrapping="quote">
-	<Card color="alternative" class="bg-paper shadow-neu mb-4  border-1 border-secondary-dark">
+	<Card
+		color="alternative"
+		class={`bg-paper relative shadow-neu mb-4 duration-200 border-1 border-secondary-dark loading overflow-clip`}
+	>
+		<div
+			class={`w-full transition-[opacity] duration-300 ${
+				loading ? 'opacity-100' : 'z-[-1] opacity-0'
+			} h-full absolute flex-center backdrop-blur-sm top-0 left-0`}
+		>
+			<Spinner />
+		</div>
 		<form
 			method="post"
 			action="/"
-			class="flex-col flex gap-2"
-			use:enhance={({ form, data, action, cancel }) => {
+			class={`flex-col transition-all flex gap-2 `}
+			use:enhance={({ data }) => {
+				loading = true;
+				console.log(loading);
 				services.forEach((s) => {
 					if (s[1]) data.append('services[]', s[0].toString());
 				});
-				// return async ({ result, update }) => {
-
-				// 	// `result` is an `ActionResult` object      // `update` is a function which triggers the logic that would be triggered if this callback wasn't set    };
-				// };
+				return async ({ result, update }) => {
+					loading = false;
+					// update();
+				};
 			}}
 		>
 			<div class="flex justify-between flex-row gap-3">

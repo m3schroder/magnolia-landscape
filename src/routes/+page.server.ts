@@ -11,6 +11,7 @@ export const load = (async () => {
 
 export const actions: Actions = {
 	default: async ({ request }) => {
+		await setTimeout(() => { }, 700);
 		const data = await request.formData()
 		const msg = {
 			from: EMAIL_FROM,
@@ -26,14 +27,14 @@ export const actions: Actions = {
 			}
 		}
 		sgMail.setApiKey(SENDGRID_KEY)
-		sgMail
-			.send(msg)
-			.then(() => {
-				console.log('Email sent');
-			})
-			.catch((error) => {
-				console.log("There was an error")
-				console.error(error);
-			});
+		// sgMail
+		// 	.send(msg)
+		// 	.then(() => {
+		// 		console.log('Email sent');
+		// 	})
+		// 	.catch((error) => {
+		// 		console.log("There was an error")
+		// 		console.error(error);
+		// 	});
 	}
 };
