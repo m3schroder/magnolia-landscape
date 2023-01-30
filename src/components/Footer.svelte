@@ -21,7 +21,7 @@
 			</FooterLinkGroup>
 		</div>
 
-		<div class="text-color w-10/12 text-sm gap-4 flex flex-col">
+		<!-- <div class="text-color w-10/12 text-sm gap-4 flex flex-col">
 			<section class="flex flex-col gap-3">
 				<span>1410 Dalton Hollow Rd </span>
 				<span>Hartsville, TN</span>
@@ -29,7 +29,7 @@
 					<span>(<strong>615</strong>) - 663 - 5650</span>
 				</a>
 			</section>
-		</div>
+		</div> -->
 	</div>
 	<hr class="my-6 w-5/6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 	<FooterCopyright aClass="w-" href="/" by="Magnolia Valley Landscape™" />

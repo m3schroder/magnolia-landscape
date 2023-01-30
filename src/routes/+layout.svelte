@@ -42,8 +42,8 @@
 	</content>
 	<Navbar bind:navHeight />
 	<div class={`fixed w-full z-10 flex-center`}>
-		<QuoteForm bind:navHeight />
-		<Menu bind:navHeight />
+		<QuoteForm />
+		<Menu />
 		<!-- <Call bind:navHeight /> -->
 	</div>
 </main>
