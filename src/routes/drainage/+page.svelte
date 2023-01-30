@@ -1,12 +1,11 @@
 <script>
 	import ActionList from '@ui/ActionList.svelte';
-	import EyeCatcher from '@ui/EyeCatcher.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
-	import { Card, P, TabItem } from 'flowbite-svelte';
+	import { Card } from 'flowbite-svelte';
 </script>
 
-<PageTitle title="Grading and Drainage Solutions" />
-<EyeCatcher
+<PageTitle
+	title="Grading and Drainage Solutions"
 	message="Look toward Magnolia Valley Landscape for all of your grading and yard Drainage issues"
 />
 

@@ -4,7 +4,7 @@
 	const cx = 'w-min flex gap-5 items-center !p-2';
 </script>
 
-<Card class="w-11/12 mx-auto w-full h-fit" img={'/map.png'}>
+<Card class="card-image" img={'/map.png'}>
 	<div class="flex justify-start items-center gap-5 w-full">
 		<a href="tel:615-796-5388" class="appearance-none no-underline">
 			<Button color="alternative" class={cx} size="md">

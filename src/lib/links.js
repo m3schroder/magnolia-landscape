@@ -1,12 +1,12 @@
 const links = [
-	// { title: 'Residential Packages', path: 'residential' },
-	{ title: 'Irrigation', path: 'irrigation' },
-	{ title: 'Landscape Design', path: 'landscaping' },
-	{ title: 'Pressure Washing', path: 'pressurewash' },
-	{ title: 'Grading & Drainage', path: 'drainage' },
-	{ title: 'Hardscaping', path: 'hardscaping' },
-	{ title: 'Pave Sealing', path: 'paving' },
-	{ title: 'Snow Services', path: 'snowservices' }
+	// { title: 'Residential Packages', href: 'residential' },
+	{ name: 'Irrigation', href: 'irrigation' },
+	{ name: 'Landscape Design', href: 'landscaping' },
+	{ name: 'Pressure Washing', href: 'pressurewash' },
+	{ name: 'Grading & Drainage', href: 'drainage' },
+	{ name: 'Hardscaping', href: 'hardscaping' },
+	{ name: 'Pave Sealing', href: 'paving' },
+	{ name: 'Snow Services', href: 'snowservices' }
 ];
 
 export default links

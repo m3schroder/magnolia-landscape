@@ -1,11 +1,9 @@
 <script>
-	import EyeCatcher from '@ui/EyeCatcher.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
 </script>
 
-<PageTitle title="Hardscaping" />
-<EyeCatcher message="Outdoor Living Redefined" />
+<PageTitle title="Hardscaping" message="Outdoor Living Redefined" />
 <Card class="card-image" img="/greatpaving.jpeg">
 	<p>
 		Outdoor Living Redefined. We offer many design options including walls, pavers, outdoor

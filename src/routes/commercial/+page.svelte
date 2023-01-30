@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ActionList from '@ui/ActionList.svelte';
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import { Card } from 'flowbite-svelte';
 	import { Li, Heading, List } from 'flowbite-svelte';
@@ -19,20 +20,22 @@
 		and <strong>responsiveness</strong>
 	</p>
 </Card>
-<Card class="!bg-blue-100 px-6 py-3 w-fit">
-	<Heading
-		tag="h2"
-		customSize="text-lg font-semibold"
-		class="mb-2 text-lg font-semibold text-gray-900 dark:text-white"
-	>
-		We Take Care Of:
-	</Heading>
-	<List tag="ul" class="space-y-1">
-		{#each ['Weekly Maintenance', 'Full Irrigation maintenance', 'Landscape design and installation', 'Customized Turf Treatments', 'Trim/Prune', 'Power washing and Building washing', 'Snow Removal', 'Tree removal and Tree care', 'Mulching', 'Hardscaping', 'And MORE'] as item}
-			<Li>{item}</Li>
-		{/each}
-	</List>
-</Card>
+<ActionList
+	title="We take care of..."
+	services={[
+		'Weekly Maintenance',
+		'Full Irrigation maintenance',
+		'Landscape design and installation',
+		'Customized Turf Treatments',
+		'Trim/Prune',
+		'Power washing and Building washing',
+		'Snow Removal',
+		'Tree removal and Tree care',
+		'Mulching',
+		'Hardscaping',
+		'And MORE'
+	]}
+/>
 
 <FreeQuote />
 <Card class="card">

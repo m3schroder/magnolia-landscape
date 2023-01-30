@@ -6,7 +6,6 @@
 </script>
 
 <PageTitle title="Landscaping Design & Installation" />
-<FreeQuote />
 <Card class="card-image" img="nicewall.jpeg" alt="Great landscaping">
 	<p>
 		<strong>Your outdoor living area is an extension of your home.</strong>
@@ -19,6 +18,7 @@
 		home, our design team will blend your dreams with their expertise.
 	</p>
 </Card>
+<FreeQuote />
 
 <ActionList
 	title="We take care of..."

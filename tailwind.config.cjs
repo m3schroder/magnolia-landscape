@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 const config = {
 	content: [
 		"./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
@@ -16,6 +18,9 @@ const config = {
 					'0%': { transform: 'rotate(180deg)' },
 					'100%': { transform: 'rotate(0deg)' }
 				}
+			},
+			fontFamily: {
+				'sans': ['Merriweather', 'serif'],
 			},
 			animation: {
 				'rotate-180': 'rotate180 300ms linear infinite'

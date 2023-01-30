@@ -5,7 +5,6 @@
 	import Drawer from '@ui/Drawer.svelte';
 	import { enhance } from '$app/forms';
 
-	export let navHeight: number;
 	export let hidden = true;
 	$: loading = false;
 
@@ -30,10 +29,10 @@
 	];
 </script>
 
-<Drawer {navHeight} wrapping="quote">
+<Drawer wrapping="quote">
 	<Card
 		color="alternative"
-		class={`bg-paper relative shadow-neu mb-4 duration-200 border-1 border-secondary-dark loading overflow-clip`}
+		class={`bg-paper relative shadow-neu mb-4 duration-200 border-1 border-secondary-dark !max-w-xl overflow-auto max-h-[85vh] h-fit`}
 	>
 		<div
 			class={`w-full transition-[opacity] duration-300 ${
@@ -58,7 +57,7 @@
 				};
 			}}
 		>
-			<div class="flex justify-between flex-row gap-3">
+			<div class="flex lg:justify-start justify-between flex-row gap-3 lg:gap-7">
 				<FormInput label={'First Name'} id={'first'} />
 				<FormInput label={'Last Name'} id={'last'} />
 			</div>
@@ -78,8 +77,8 @@
 				{/each}
 			</div>
 			<Label class="text-neutral-500 mt-3">Additional Info</Label>
-			<Textarea id={'additional'} name="additional" />
-			<Button class="mt-7" type="submit">Send Quote Request</Button>
+			<Textarea id={'additional'} name="additional" class="overflow-clip" />
+			<Button class="mt-7" type="submit">Send Request</Button>
 		</form>
 	</Card>
 </Drawer>

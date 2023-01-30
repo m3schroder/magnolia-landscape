@@ -8,9 +8,6 @@
 	html{
 		@apply bg-gray-50
 	}
-	*{
-		/* @apply text-color; */
-	}
 	strong{
 		@apply text-gray-600;
 	}
@@ -18,7 +15,7 @@
 		@apply text-gray-500;
 	}
 	p{
-		@apply text-lg
+		@apply font-light text-lg leading-9
 	}
 }
 @layer utilities {
@@ -32,7 +29,7 @@
      @apply flex justify-center items-center;
   }
   .text-color{
-     @apply text-neutral-700;
+     @apply text-neutral-600;
   }
   .header-pb{
      @apply mb-5;
@@ -40,14 +37,11 @@
 }
 
 @layer components{
-	.title{
-		@apply text-xl text-center;
-	}
 	#drawer::after{
 		@apply bg-black  w-screen h-screen fixed top-0 left-0 z-[-1];
 	}
 	.action-card{
-		@apply  card flex flex-col !bg-blue-700 text-white justify-center items-center !px-12 w-fit;
+		@apply  card flex flex-col !bg-slate-600 text-white justify-center items-center !px-12 w-fit;
 	}
 	.action-card ul{
 		@apply flex flex-col gap-2 text-white list-disc text-lg
@@ -55,17 +49,20 @@
 	.action-card li{
 		@apply pl-2 mx-5
 	}
+	.action-card h3{
+		@apply lg:mb-6;
+	}
 	.card{
-		@apply  w-11/12 !px-6 !py-9 gap-4;
+		@apply  w-11/12 lg:!px-16 !px-6 !py-9 gap-4 lg:!max-w-3xl ;
 	}
 	.card-image{
-		@apply w-11/12 pb-4 gap-4;
+		@apply card !pt-0 !px-0 !pb-4 gap-4 lg:!bg-[#f9fafb] lg:!border-0 lg:!shadow-none;
 	}
-	.desktop-nav{
-		@apply card z-40 fixed bottom-2 flex-center w-fit gap-5 px-12 !py-2 rounded-xl 
+	.card-image img{
+		@apply lg:w-screen lg:rounded-lg;
 	}
-	.mobile-nav{
-		@apply card z-40 fixed bottom-2 flex-center w-fit gap-5 px-12 !py-2 rounded-xl 
+	.card h3{
+		@apply text-xl;
 	}
 }
 

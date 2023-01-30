@@ -1,4 +1,5 @@
 <script>
+	import FreeQuote from '@ui/FreeQuote.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
 </script>
@@ -12,6 +13,8 @@
 		concrete, siding, and more.
 	</p>
 </Card>
+
+<FreeQuote />
 
 <Card class="card">
 	<p>
