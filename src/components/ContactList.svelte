@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Button, Card } from 'flowbite-svelte';
 	import { Envelope, Phone } from 'svelte-heros-v2';
-	const cx = 'w-min flex gap-5 items-center !p-4 !bg-blue text-white';
+	const cx = 'w-min flex gap-5 items-center !p-4 !bg-blue hover:!bg-blue-600 text-white';
 </script>
 
 <a href="tel:615-796-5388" class="appearance-none no-underline">
