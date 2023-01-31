@@ -1,13 +1,14 @@
 <script lang="ts">
 	import ActionList from '@ui/ActionList.svelte';
 	import FreeQuote from '@ui/FreeQuote.svelte';
+	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
 	import { Li, Heading, List } from 'flowbite-svelte';
 </script>
 
-<h2>Commercial Services</h2>
+<PageTitle title="Commercial Services" />
 
-<Card class="card">
+<Card class="card-image" img="/commercial-work.jpeg">
 	<p>
 		<strong>The one stop shop for all of your commercial landscape maintenance</strong>
 		We have experts for all of your commercial property needs.
@@ -25,12 +26,11 @@
 	services={[
 		'Weekly Maintenance',
 		'Full Irrigation maintenance',
-		'Landscape design and installation',
+		'Landscape Design and Installation',
 		'Customized Turf Treatments',
 		'Trim/Prune',
-		'Power washing and Building washing',
+		'Power Washing',
 		'Snow Removal',
-		'Tree removal and Tree care',
 		'Mulching',
 		'Hardscaping',
 		'And MORE'

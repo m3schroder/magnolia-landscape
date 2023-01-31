@@ -5,7 +5,7 @@
 </script>
 
 <PageTitle title="Pressure Washing" />
-<Card class="card">
+<Card class="card-image" img="powerwashing.jpeg">
 	<p>
 		Your investment properties or commercial spaces need to be taken care of by a professional. Let
 		us take care of your exterior so you know that if your tenants step outside, the environment

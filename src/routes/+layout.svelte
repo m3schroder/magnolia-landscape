@@ -40,7 +40,7 @@
 			<Map />
 			<Footer />
 		</div>
-		<div class="flex-center gap-7">
+		<div class="hidden lg:flex justify-center gap-7">
 			<ContactList />
 		</div>
 	</content>

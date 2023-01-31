@@ -16,7 +16,8 @@
 	<!-- <span class="shrink text-truncate max-w-2/3">magnoliavalleylandscape@gmail.com</span> -->
 </a>
 <a
-	href="https://www.facebook.com/people/Magnolia-Valley-Landscape/100066705797850/"
+	href="https://www.facebook.com/magnoliavalleylandscapes"
+	target="_blank"
 	class="appearance-none no-underline"
 >
 	<Button class={cx + ' text-lg'} size="md">Facebook</Button>

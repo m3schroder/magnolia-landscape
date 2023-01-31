@@ -6,7 +6,7 @@
 </script>
 
 <PageTitle title="Landscaping Design & Installation" />
-<Card class="card-image" img="nicewall.jpeg" alt="Great landscaping">
+<Card class="card-image" img="dopeyard.jpeg" alt="Great landscaping">
 	<p>
 		<strong>Your outdoor living area is an extension of your home.</strong>
 		<br class="break-space" />
