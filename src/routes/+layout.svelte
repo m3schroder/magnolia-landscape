@@ -8,6 +8,7 @@
 	import Menu from '@ui/Menu.svelte';
 	import QuoteForm from '@ui/QuoteForm.svelte';
 	import Footer from '@ui/Footer.svelte';
+	import ContactList from '@ui/ContactList.svelte';
 
 	let topLevel: HTMLElement;
 	afterUpdate(() => {
@@ -34,10 +35,13 @@
 		</a>
 		<slot />
 		<div
-			class="flex lg:flex-row flex-col lg:items-start lg:justify-between items-center gap-9 lg:w-full lg:max-w-3xl"
+			class="flex lg:flex-row flex-col lg:items-start lg:justify-center items-center gap-9 lg:w-full lg:max-w-3xl"
 		>
 			<Map />
 			<Footer />
+		</div>
+		<div class="flex-center gap-7">
+			<ContactList />
 		</div>
 	</content>
 	<Navbar bind:navHeight />

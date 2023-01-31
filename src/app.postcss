@@ -3,72 +3,59 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer base{
-	html{
-		@apply bg-gray-50
+@layer base {
+	html {
+		@apply bg-gray-50;
 	}
-	strong{
+	strong {
 		@apply text-gray-600;
 	}
-	h1,h2,h3,h4,h5{
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
 		@apply text-gray-500;
 	}
-	p{
-		@apply font-light text-lg leading-9
+	p {
+		@apply font-light text-lg !leading-10 lg:text-xl;
 	}
 }
 @layer utilities {
-	.fakeclass{
-		@apply bg-orange-300 bg-yellow-300
+	.break-space {
+		@apply mb-5;
 	}
-	.break-space{
-		@apply mb-5
+	.flex-center {
+		@apply flex justify-center items-center;
 	}
-  .flex-center{
-     @apply flex justify-center items-center;
-  }
-  .text-color{
-     @apply text-neutral-600;
-  }
-  .header-pb{
-     @apply mb-5;
-  }
+	.text-color {
+		@apply text-neutral-600;
+	}
+	.header-pb {
+		@apply mb-5;
+	}
 }
 
-@layer components{
-	#drawer::after{
+@layer components {
+	#drawer::after {
 		@apply bg-black  w-screen h-screen fixed top-0 left-0 z-[-1];
 	}
-	.card{
-		@apply  w-11/12 lg:!px-16 !px-6 !py-9 gap-4 lg:!max-w-3xl ;
+	.card {
+		@apply lg:!border-0 lg:!shadow-none w-11/12 lg:!px-16 !px-6 !py-9 gap-4 lg:!max-w-5xl;
 	}
-	.card-image{
-		@apply card !pt-0 !px-0 !pb-4 gap-4 lg:!bg-[#f9fafb] lg:!border-0 lg:!shadow-none;
+	.card-image {
+		@apply relative flex-center justify-center card !pt-0 !px-0 !pb-4 gap-4 lg:!bg-[#f9fafb] lg:!border-0 lg:!shadow-none;
 	}
-	.card-image img{
-		@apply lg:w-screen lg:rounded-lg;
+	.card-image img {
+		@apply lg:!w-screen lg:max-w-7xl lg:rounded-lg;
 	}
-	.card h3{
-		@apply text-xl;
+	.map {
+		@apply relative flex-center justify-center !pt-0 !px-0 !pb-4 gap-4 lg:!bg-[#f9fafb] lg:!border-0 lg:!shadow-none;
 	}
-}
-
-
-@keyframes opacity{
-	0%{
-		opacity: 0;
+	.map img {
+		@apply lg:!rounded-lg lg:max-w-lg;
 	}
-	100%{
-		opacity: .3;
-	}
-}
-
-@keyframes rotate-180{
-	0%{
-		transform: rotate(180deg);
-	}
-	100%{
-		transform: rotate(0deg);
+	.card h3 {
+		@apply text-xl uppercase;
 	}
 }

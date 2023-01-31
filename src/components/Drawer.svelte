@@ -54,12 +54,12 @@
 	transitionParams={transitionParamsBottom}
 	bind:hidden
 >
-	<!-- <CloseButton
-		class="text-neutral-500 absolute top-5 right-5 lg:top-7 lg:right-8 z-50"
+	<CloseButton
+		class="hidden lg:block text-neutral-500 absolute top-5 right-5 lg:top-7 lg:right-8 z-50"
 		on:click={() => {
 			hidden = true;
 			currentNav.set(undefined);
 		}}
-	/> -->
+	/>
 	<slot />
 </Drawer>

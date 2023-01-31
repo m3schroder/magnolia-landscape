@@ -12,15 +12,17 @@
 	<meta name="Home page for magnolia valley" />
 </svelte:head>
 
-<Card img="/dopeyard.jpeg" class="card-image relative flex-center justify-center">
-	<h5 class="lg:text-2xl text-xl mt-2 lg:mb-12 mb-5 uppercase flex flex-col gap-2">
+<Card img="/dopeyard.jpeg" class="card-image ">
+	<h5 class="lg:text-2xl text-xl mt-2 lg:mb-12 mb-5 uppercase flex flex-col gap-2 text-center">
 		<h1 class="uppercase lg:text-5xl text-3xl font-bold">Landscaping</h1>
 		<Hr divClass="items-start max-w-sm mb-3" />
 		<h2>Affordable</h2>
 		<h2>Hassle-Free</h2>
 		<h2>Quality Driven</h2>
 	</h5>
-	<FreeQuote />
+	<div class="w-full flex-center">
+		<FreeQuote />
+	</div>
 </Card>
 
 <Card class="flex flex-col card flex-wrap pb-10 justify-start">

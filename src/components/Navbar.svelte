@@ -28,16 +28,16 @@
 </script>
 
 <Navbar
-	navClass="hidden lg:block lg:absolute rounded-md drop-shadow py-3 px-5 top-2 max-w-xl w-full"
+	navClass="hidden lg:block lg:absolute rounded-md py-3 px-10 shadow-sm top-0 max-w-screen w-full"
 	id="navbar"
 >
-	<NavBrand href="/">
-		<img src="magnolia-logo.png" class="mr-3 h-8 sm:h-9" alt="Magnolia Logo" />
+	<NavBrand href="/" class="h-16">
+		<img src="magnolia-logo.png" class="mr-3 !h-full sm:h-9" alt="Magnolia Logo" />
 	</NavBrand>
 	<NavUl ulClass="flex gap-8 text-md">
 		<!-- <NavLi active={currentRoute == '/contact'} href="/contact">About</NavLi> -->
 		<NavLi id="nav-menu1" class=" cursor-pointer"><Chevron aligned>Services</Chevron></NavLi>
-		<NavLi on:click={() => currentNav.set('quote')} class="cursor-pointer">Contact</NavLi>
+		<NavLi on:click={() => currentNav.set('quote')} class="cursor-pointer">Get Quote</NavLi>
 		<Dropdown triggeredBy="#nav-menu1" class="w-fit z-20 p-2">
 			{#each links as Item}
 				<DropdownItem
