@@ -5,11 +5,17 @@
 	export let title: string;
 </script>
 
-<Card class="card flex flex-col text-color !bg-gray-50 items-start !px-12 w-fit">
+<Card
+	class="card flex flex-col text-white lg:!max-w-none lg:rounded-none lg:!w-screen border-0 shadow-none !bg-gray-50 lg:!bg-blue-100 text-color items-center !px-12 w-fit"
+>
 	<h6 class="text-lg lg:text-xl w-full text-center lg:mb-6">{title}</h6>
-	<ul class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 font-light text-sm">
+	<ul class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 font-light w-2/3 text-sm">
 		{#each services as service}
-			<li class="mx-2 bg-paper px-3 rounded-lg py-4">{service}</li>
+			<li
+				class="mx-2 lg:border-1 lg:border-gray-200 bg-paper lg:bg-white lg:min-w-full lg:!py-5 flex-center text-center px-3 rounded-lg py-4"
+			>
+				{service}
+			</li>
 		{/each}
 	</ul>
 </Card>

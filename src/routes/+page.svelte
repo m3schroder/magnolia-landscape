@@ -25,16 +25,20 @@
 	</div>
 </Card>
 
-<Card class="flex flex-col card flex-wrap pb-10 justify-start">
+<Card
+	class="flex flex-col card lg:shadow-none flex-wrap pb-10 justify-start lg:!max-w-none lg:!w-screen lg:rounded-none lg:bg-blue-100 lg:items-center"
+>
 	<h3 class="w-full text-center header-pb">Services</h3>
 	{#each links as link}
 		<Button
-			color="blue"
 			href={link.href}
-			size="xs"
-			class={`cursor-pointer grow text-sm transition-colors  hover:bg-primary rounded-full opacity-70 `}
-			>{link.name}</Button
-		>
+			size="sm"
+			class={`cursor-pointer group grow text-sm transition-colors lg:py-4 lg:bg-white lg:hover:bg-neutral-50 lg:border-1 lg:border-gray-200 lg:text-color rounded-full lg:max-w-lg lg:w-full `}
+			><span class="lg:w-40">{link.name}</span>
+			<ArrowSmallRight
+				class="group-active:translate-x-0 hidden lg:block group-hover:translate-x-3 transition-transform duration-200"
+			/>
+		</Button>
 	{/each}
 </Card>
 

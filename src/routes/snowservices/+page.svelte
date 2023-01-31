@@ -22,7 +22,7 @@
 		'Salt Application',
 		'Sidewalk Snow Removal',
 		'Ice Melt Application',
-		'Skidsterrs & Loaders',
+		'Skidsteers & Loaders',
 		'Snow Relocation',
 		'24/7 Emergency Snow & Ice Management',
 		'Post Storm Snow and Ice Removal'

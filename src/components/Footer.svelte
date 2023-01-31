@@ -9,7 +9,7 @@
 	} from 'flowbite-svelte';
 </script>
 
-<Footer footerType="logo" class="card max-w-xs">
+<Footer footerType="logo" class="max-w-xs">
 	<div class="flex lg:justify-start px-4 items-center justify-between flex-col">
 		<div class="w-full flex justify-evenly mb-8 ">
 			<FooterBrand src="/magnolia-logo.png" alt="Magnolia Logo" name="Magnolia Valley Landscape" />

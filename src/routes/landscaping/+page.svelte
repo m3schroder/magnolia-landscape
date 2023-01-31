@@ -22,5 +22,5 @@
 
 <ActionList
 	title="We take care of..."
-	services={['Landscape Plants', 'Planting Plans', 'Outdoor Lighting Plans', 'Irrigation Plans']}
+	services={['Landscape Plants', 'Planting Plans', 'Outdoor Lighting', 'Irrigation Plans']}
 />
