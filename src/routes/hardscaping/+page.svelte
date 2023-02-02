@@ -9,7 +9,7 @@
 </svelte:head>
 
 <PageTitle title="Hardscaping" message="Outdoor Living Redefined" />
-<Card class="card-image" img="/greatpaving.jpeg">
+<Card class="card-image" img="/greatpaving.webp">
 	<p>
 		Outdoor Living Redefined. We offer many design options including walls, pavers, outdoor
 		kitchens, features, lighting, and more! With over 10 years of experience designing and

@@ -11,7 +11,7 @@
 
 <PageTitle title="Snow Removal" />
 
-<Card class="card-image" img="/snow-removal.jpg">
+<Card class="card-image" img="/snow-removal.webp">
 	<p>
 		Don't get buried in snow this season! We offer both residential, and commercial snow removal
 		services to ensure your home or property is safe, accessible, and snow-free! No job is too big.

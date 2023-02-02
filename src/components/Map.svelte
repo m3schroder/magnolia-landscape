@@ -5,7 +5,7 @@
 	const cx = 'w-min flex gap-5 items-center !p-2';
 </script>
 
-<Card class="map" img={'/map.png'}>
+<Card class="map" img={'/map.webp'}>
 	<div class="lg:hidden flex justify-start items-center gap-5 w-full">
 		<ContactList />
 	</div>

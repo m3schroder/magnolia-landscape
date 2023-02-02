@@ -9,7 +9,7 @@
 </svelte:head>
 
 <PageTitle title="Pave Sealing" />
-<Card class="card-image" img="awesome_sealing.jpeg">
+<Card class="card-image" img="awesome_sealing.webp">
 	<p>
 		If you let pavers go too long without being sealed, you could face a very expensive repair or
 		replacement down the road. Paver Sealing is the process of cleaning, sanding, and sealing

@@ -13,7 +13,7 @@
 
 <PageTitle title="Commercial Services" />
 
-<Card class="card-image" img="/commercial-work.jpeg">
+<Card class="card-image" img="/commercial-work.webp">
 	<p>
 		<strong>The one stop shop for all of your commercial landscape maintenance</strong>
 		We have experts for all of your commercial property needs.

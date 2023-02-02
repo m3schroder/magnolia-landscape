@@ -10,7 +10,7 @@
 </svelte:head>
 
 <PageTitle title="Pressure Washing" />
-<Card class="card-image" img="powerwashing.jpeg">
+<Card class="card-image" img="powerwashing.webp">
 	<p>
 		Your investment properties or commercial spaces need to be taken care of by a professional. Let
 		us take care of your exterior so you know that if your tenants step outside, the environment
