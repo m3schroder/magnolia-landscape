@@ -16,11 +16,9 @@
 			<FooterLinkGroup
 				ulClass="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400"
 			>
-				<!-- <FooterLink href="/"></FooterLink>About</FooterLink> -->
-				<span on:click={() => currentNav.set('quote')} class="cursor-pointer"> Contact </span>
+				<FooterLink on:click={() => currentNav.set('quote')}>Contact</FooterLink>
 			</FooterLinkGroup>
 		</div>
-
 		<!-- <div class="text-color w-10/12 text-sm gap-4 flex flex-col">
 			<section class="flex flex-col gap-3">
 				<span>1410 Dalton Hollow Rd </span>

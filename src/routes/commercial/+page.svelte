@@ -6,6 +6,11 @@
 	import { Li, Heading, List } from 'flowbite-svelte';
 </script>
 
+<svelte:head>
+	<title>Commercial Service</title>
+	<meta name="Commercial Landscaping Services in Brentwood and Franklin" />
+</svelte:head>
+
 <PageTitle title="Commercial Services" />
 
 <Card class="card-image" img="/commercial-work.jpeg">

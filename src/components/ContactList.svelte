@@ -17,6 +17,7 @@
 </a>
 <a
 	href="https://www.facebook.com/magnoliavalleylandscapes"
+	rel="noopener noreferrer"
 	target="_blank"
 	class="appearance-none no-underline"
 >

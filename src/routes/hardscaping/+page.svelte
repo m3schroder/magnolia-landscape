@@ -3,6 +3,11 @@
 	import { Card } from 'flowbite-svelte';
 </script>
 
+<svelte:head>
+	<title>Hardscaping</title>
+	<meta name="Hardscaping in Brentwood and Franklin" />
+</svelte:head>
+
 <PageTitle title="Hardscaping" message="Outdoor Living Redefined" />
 <Card class="card-image" img="/greatpaving.jpeg">
 	<p>

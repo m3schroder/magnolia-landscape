@@ -5,6 +5,11 @@
 	import { Card } from 'flowbite-svelte';
 </script>
 
+<svelte:head>
+	<title>Landscaping</title>
+	<meta name="Beautiful Landscaping and Design in Brentwood and Franklin" />
+</svelte:head>
+
 <PageTitle title="Landscaping Design & Installation" />
 <Card class="card-image" img="dopeyard.jpeg" alt="Great landscaping">
 	<p>

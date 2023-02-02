@@ -4,6 +4,11 @@
 	import { Card } from 'flowbite-svelte';
 </script>
 
+<svelte:head>
+	<title>Pressure Washing</title>
+	<meta name="Commercial Pressure Washing Services" />
+</svelte:head>
+
 <PageTitle title="Pressure Washing" />
 <Card class="card-image" img="powerwashing.jpeg">
 	<p>

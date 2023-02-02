@@ -27,14 +27,14 @@ export const actions: Actions = {
 			}
 		}
 		sgMail.setApiKey(SENDGRID_KEY)
-		// sgMail
-		// 	.send(msg)
-		// 	.then(() => {
-		// 		console.log('Email sent');
-		// 	})
-		// 	.catch((error) => {
-		// 		console.log("There was an error")
-		// 		console.error(error);
-		// 	});
+		sgMail
+			.send(msg)
+			.then(() => {
+				console.log('Email sent');
+			})
+			.catch((error) => {
+				console.log("There was an error")
+				console.error(error);
+			});
 	}
 };

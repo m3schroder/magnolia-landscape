@@ -3,6 +3,11 @@
 	import { Card, Hr } from 'flowbite-svelte';
 </script>
 
+<svelte:head>
+	<title>Paving</title>
+	<meta name="Paving Services you'll love" />
+</svelte:head>
+
 <PageTitle title="Pave Sealing" />
 <Card class="card-image" img="awesome_sealing.jpeg">
 	<p>

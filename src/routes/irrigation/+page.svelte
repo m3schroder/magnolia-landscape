@@ -4,6 +4,11 @@
 	import { Card, Hr } from 'flowbite-svelte';
 </script>
 
+<svelte:head>
+	<title>Irrigation</title>
+	<meta name="Expert irrigation installations" />
+</svelte:head>
+
 <PageTitle title="Irrigation" />
 
 <Card class="card-image" img="/sprinkler.jpeg">

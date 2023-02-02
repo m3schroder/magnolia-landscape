@@ -4,6 +4,11 @@
 	import { Card } from 'flowbite-svelte';
 </script>
 
+<svelte:head>
+	<title>Drainage & Grading</title>
+	<meta name="Easy Grading and Drainage" />
+</svelte:head>
+
 <PageTitle
 	title="Grading and Drainage Solutions"
 	message="Look toward Magnolia Valley Landscape for all of your grading and yard Drainage issues"

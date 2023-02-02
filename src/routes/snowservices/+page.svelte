@@ -4,6 +4,11 @@
 	import { Card } from 'flowbite-svelte';
 </script>
 
+<svelte:head>
+	<title>Snow Services</title>
+	<meta name="Snow services in Franklin and Brentwood" />
+</svelte:head>
+
 <PageTitle title="Snow Removal" />
 
 <Card class="card-image" img="/snow-removal.jpg">
