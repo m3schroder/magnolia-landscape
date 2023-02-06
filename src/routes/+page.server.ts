@@ -22,6 +22,7 @@ export const actions: Actions = {
 				last: data.get('last'),
 				email: data.get('email'),
 				number: data.get('number'),
+				city: data.get('city'),
 				services: data.getAll('services[]'),
 				additional: data.get('additional')
 			}

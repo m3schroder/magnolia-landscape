@@ -8,7 +8,7 @@
 	export let type: InputType = 'text';
 </script>
 
-<div class="flex flex-col gap-1 mb-2">
+<div class="flex flex-col gap-1 mb-2 w-full">
 	<Label for={label} class="text-neutral-500 mb-1">{label}</Label>
 	<Input name={id} {id} {value} {placeholder} {type} required={false} />
 </div>

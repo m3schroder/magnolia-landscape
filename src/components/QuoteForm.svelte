@@ -53,7 +53,7 @@
 			<form
 				method="post"
 				action="/"
-				class={`flex-col transition-all flex gap-2 `}
+				class={`flex-col justify-center transition-all flex gap-2 `}
 				use:enhance={({ data }) => {
 					loading = true;
 					services.forEach((s) => {
@@ -70,11 +70,14 @@
 					};
 				}}
 			>
-				<div class="flex lg:justify-start justify-between flex-row gap-3 lg:gap-7">
+				<div class="flex justify-between flex-row gap-3 lg:gap-7">
 					<FormInput label={'First Name'} id={'first'} />
 					<FormInput label={'Last Name'} id={'last'} />
 				</div>
-				<FormInput label={'Phone'} id={'number'} type={'tel'} />
+				<div class="flex justify-between flex-row gap-3 lg:gap-7">
+					<FormInput label={'Phone'} id={'number'} type={'tel'} />
+					<FormInput label={'City'} id={'city'} />
+				</div>
 				<FormInput label={'Email'} id={'email'} type={'email'} />
 				<Label class="text-neutral-500 mb-1">Select Services</Label>
 				<div class="flex flex-row flex-wrap gap-4">
