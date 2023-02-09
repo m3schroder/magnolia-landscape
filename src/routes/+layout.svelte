@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { afterUpdate } from 'svelte';
+	import { afterUpdate, onMount } from 'svelte';
+	import { afterNavigate } from '$app/navigation';
 
 	import '../app.postcss';
 	import Navbar from '@ui/Navbar.svelte';
@@ -9,12 +10,16 @@
 	import QuoteForm from '@ui/QuoteForm.svelte';
 	import Footer from '@ui/Footer.svelte';
 	import ContactList from '@ui/ContactList.svelte';
+	import * as ackeeTracker from 'ackee-tracker';
 
-	// Analytics import
-	import { dev } from '$app/environment';
-	import { inject } from '@vercel/analytics';
-	inject({ mode: dev ? 'development' : 'production' });
-
+	afterNavigate(() => {
+		const ackee = ackeeTracker.create('https://stats.doubleshot.dev', {
+			detailed: false,
+			ignoreLocalhost: false
+		});
+		console.log('Error');
+		ackee.record('c358e68a-bfc4-435d-bbe8-e0726b93f785');
+	});
 	let topLevel: HTMLElement;
 	afterUpdate(() => {
 		topLevel.scrollTo({

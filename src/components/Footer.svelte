@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { currentNav } from '@lib/menuStore';
+	import { currentNav } from '@lib/store';
 	import {
 		Footer,
 		FooterCopyright,

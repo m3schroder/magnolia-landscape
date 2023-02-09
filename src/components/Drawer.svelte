@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { CloseButton, Drawer } from 'flowbite-svelte';
 	import { sineInOut } from 'svelte/easing';
-	import { currentNav } from '@lib/menuStore';
+	import { currentNav } from '@lib/store';
 
 	export let wrapping: string;
 

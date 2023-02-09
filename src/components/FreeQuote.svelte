@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { currentNav } from '@lib/menuStore';
+	import { currentNav } from '@lib/store';
 	import { Button } from 'flowbite-svelte';
 	import { ArrowSmallRight } from 'svelte-heros-v2';
 

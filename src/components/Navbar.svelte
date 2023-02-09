@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { currentNav } from '@lib/menuStore';
+	import { currentNav } from '@lib/store';
 	import links from '@lib/links';
 	import {
 		Button,

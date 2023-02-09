@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Drawer from '@ui/Drawer.svelte';
-	import { currentNav } from '@lib/menuStore';
+	import { currentNav } from '@lib/store';
 	import { Button, Card } from 'flowbite-svelte';
 	import links from '$lib/links';
 </script>

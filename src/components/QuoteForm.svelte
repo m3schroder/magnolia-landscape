@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { currentNav } from '@lib/menuStore';
+	import { currentNav } from '@lib/store';
 	import FormInput from '@ui/FormInput.svelte';
 	import { Button, Card, Label, Spinner, Textarea } from 'flowbite-svelte';
 	import Drawer from '@ui/Drawer.svelte';
