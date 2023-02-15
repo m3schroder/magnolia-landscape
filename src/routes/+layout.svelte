@@ -17,7 +17,6 @@
 			detailed: false,
 			ignoreLocalhost: false
 		});
-		console.log('Error');
 		ackee.record('c358e68a-bfc4-435d-bbe8-e0726b93f785');
 	});
 	let topLevel: HTMLElement;

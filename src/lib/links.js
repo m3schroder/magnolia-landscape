@@ -1,5 +1,6 @@
 const links = [
 	// { title: 'Residential Packages', href: 'residential' },
+	{ name: 'Lawn Care', href: 'lawncare' },
 	{ name: 'Irrigation', href: 'irrigation' },
 	{ name: 'Landscape Design', href: 'landscaping' },
 	{ name: 'Pressure Washing', href: 'pressurewash' },
@@ -9,4 +10,4 @@ const links = [
 	{ name: 'Snow Services', href: 'snowservices' }
 ];
 
-export default links
+export default links;
