@@ -3,17 +3,19 @@
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
-	import { Li, Heading, List } from 'flowbite-svelte';
+	import Image from 'svelte-image';
 </script>
 
 <svelte:head>
 	<title>Commercial Service</title>
 	<meta name="Commercial Landscaping Services in Brentwood and Franklin" />
+	<link rel="preload" as="image" href={'/commercial-work.webp'} />
 </svelte:head>
 
 <PageTitle title="Commercial Services" />
 
 <Card class="card-image" img="/commercial-work.webp">
+	<Image />
 	<p>
 		<strong>The one stop shop for all of your commercial landscape maintenance</strong>
 		We have experts for all of your commercial property needs.
