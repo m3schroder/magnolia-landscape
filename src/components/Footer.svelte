@@ -7,7 +7,7 @@
 		FooterBrand,
 		FooterLink
 	} from 'flowbite-svelte';
-	import footerLogo from '../static/magnolia-logo.png?w=200';
+	import footerLogo from '@static/magnolia-logo.png?w=200';
 </script>
 
 <Footer footerType="logo" class="max-w-xs">

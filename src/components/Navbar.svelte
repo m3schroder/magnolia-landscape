@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { currentNav } from '@lib/store';
 	import links from '@lib/links';
-	import image from '../static/magnolia-logo.png?w=200';
+	import image from '@static/magnolia-logo.png?w=200';
 	import * as Icon from 'svelte-awesome-icons';
 	import {
 		Button,

@@ -3,7 +3,7 @@
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
-	import image from '../../static/commercial-work.webp?w=1200';
+	import image from '@static/commercial-work.webp?w=1200&webp';
 </script>
 
 <svelte:head>

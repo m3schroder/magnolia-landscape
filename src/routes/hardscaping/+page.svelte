@@ -1,7 +1,7 @@
 <script>
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
-	import image from '../../static/greatpaving.webp?w=900';
+	import image from '@static/greatpaving.webp?w=900';
 </script>
 
 <svelte:head>

@@ -2,7 +2,7 @@
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card, Hr } from 'flowbite-svelte';
-	import image from '../../static/sprinkler.webp?w=800';
+	import image from '@static/sprinkler.webp?w=800';
 </script>
 
 <svelte:head>

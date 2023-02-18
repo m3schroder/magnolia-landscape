@@ -4,7 +4,7 @@
 	import { ArrowSmallRight } from 'svelte-heros-v2';
 	import links from '$lib/links';
 	export const label = undefined;
-	import greatLawn from '../static/greatlawn.webp?w=1000';
+	import greatLawn from '@static/greatlawn.webp?w=1000';
 </script>
 
 <svelte:head>

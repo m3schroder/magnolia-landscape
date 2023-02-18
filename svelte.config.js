@@ -17,6 +17,7 @@ const config = {
 			"@lib": path.resolve("./src/lib"),
 			"@ui": path.resolve("./src/components"),
 			"@src": path.resolve("./src"),
+			"@static": path.resolve("./src/static"),
 		}
 	}
 };

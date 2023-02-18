@@ -12,7 +12,7 @@
 	import QuoteForm from '@ui/QuoteForm.svelte';
 	import Footer from '@ui/Footer.svelte';
 	import ContactList from '@ui/ContactList.svelte';
-	import logo from '../static/magnolia-logo.png?w=400';
+	import logo from '@static/magnolia-logo.png?w=400&webp';
 
 	afterNavigate(() => {
 		$ackee?.record('8650a19f-ee96-4325-aa17-ca264d593edd');
@@ -22,7 +22,8 @@
 		ackee.set(
 			ackeeTracker.create('https://stats.magnoliavalleylandscape.com', {
 				detailed: true,
-				ignoreLocalhost: false
+				ignoreLocalhost: true,
+				ignoreOwnVisits: false
 			})
 		);
 	});
@@ -37,6 +38,9 @@
 	$: navHeight = 60;
 </script>
 
+<svelte:head>
+	<link rel="preload" as="image" href={'/awesome_sealing.webp'} />
+</svelte:head>
 <main
 	class="flex flex-col  items-center h-screen overflow-y-auto overflow-x-hidden"
 	bind:this={topLevel}
