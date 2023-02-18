@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { currentNav } from '@lib/store';
+	import { currentNav, ackee } from '@lib/store';
 	import FormInput from '@ui/FormInput.svelte';
 	import { Button, Card, Label, Spinner, Textarea } from 'flowbite-svelte';
 	import Drawer from '@ui/Drawer.svelte';
@@ -59,6 +59,7 @@
 					services.forEach((s) => {
 						if (s[1]) data.append('services[]', s[0].toString());
 					});
+					$ackee?.action('66a59fbe-25af-46fd-a5b9-b42d74bbf598', { key: 'Sent', value: 1 });
 					return async ({ result, update }) => {
 						loading = false;
 						update();

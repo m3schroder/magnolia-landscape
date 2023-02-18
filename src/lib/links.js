@@ -5,7 +5,6 @@ const links = [
 	{ name: 'Pressure Washing', href: 'pressurewash' },
 	{ name: 'Grading & Drainage', href: 'drainage' },
 	{ name: 'Hardscaping', href: 'hardscaping' },
-	{ name: 'Pave Sealing', href: 'paving' },
 	{ name: 'Snow Services', href: 'snowservices' }
 ];
 

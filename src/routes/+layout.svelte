@@ -2,23 +2,28 @@
 	import { page } from '$app/stores';
 	import { afterUpdate, onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
+	import * as ackeeTracker from 'ackee-tracker';
 
 	import '../app.postcss';
+	import { ackee } from '$lib/store';
 	import Navbar from '@ui/Navbar.svelte';
 	import Map from '@ui/Map.svelte';
 	import Menu from '@ui/Menu.svelte';
 	import QuoteForm from '@ui/QuoteForm.svelte';
 	import Footer from '@ui/Footer.svelte';
 	import ContactList from '@ui/ContactList.svelte';
-	import * as ackeeTracker from 'ackee-tracker';
 
 	afterNavigate(() => {
-		const ackee = ackeeTracker.create('https://stats.doubleshot.dev', {
-			detailed: false,
-			ignoreLocalhost: false
-		});
-		console.log('Error');
-		ackee.record('c358e68a-bfc4-435d-bbe8-e0726b93f785');
+		$ackee?.record('c358e68a-bfc4-435d-bbe8-e0726b93f785');
+	});
+	onMount(() => {
+		ackee.set(
+			ackeeTracker.create('https://stats.doubleshot.dev', {
+				detailed: true,
+				ignoreLocalhost: false,
+				ignoreOwnVisits: false
+			})
+		);
 	});
 	let topLevel: HTMLElement;
 	afterUpdate(() => {
