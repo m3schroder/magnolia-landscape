@@ -12,7 +12,7 @@
 	import QuoteForm from '@ui/QuoteForm.svelte';
 	import Footer from '@ui/Footer.svelte';
 	import ContactList from '@ui/ContactList.svelte';
-	import logo from '../static/magnolia-logo.png';
+	import logo from '../static/magnolia-logo.png?w=400';
 
 	afterNavigate(() => {
 		$ackee?.record('8650a19f-ee96-4325-aa17-ca264d593edd');

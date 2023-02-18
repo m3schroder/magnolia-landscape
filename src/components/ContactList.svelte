@@ -12,7 +12,6 @@
 	on:click={() =>
 		$ackee?.action('0d2e09d4-c839-424b-abb0-e6686b52a828', { key: 'Facebook Opened', value: 1 })}
 >
-	>
 	<Icon.SquareFacebookBrand class="text-blue text-lg" size={'50'} />
 </a>
 <a
@@ -21,7 +20,6 @@
 	on:click={() =>
 		$ackee?.action('0d2e09d4-c839-424b-abb0-e6686b52a828', { key: 'Call Clicked', value: 1 })}
 >
-	>
 	<Icon.SquarePhoneSolid class="text-blue text-lg" size={'50'} />
 </a>
 <a
@@ -30,6 +28,5 @@
 	on:click={() =>
 		$ackee?.action('0d2e09d4-c839-424b-abb0-e6686b52a828', { key: 'Mail Opened', value: 1 })}
 >
-	>
 	<Icon.SquareEnvelopeSolid class="text-blue text-lg" size={'50'} />
 </a>
