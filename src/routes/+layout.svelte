@@ -15,7 +15,7 @@
 	import logo from '../static/magnolia-logo.png';
 
 	afterNavigate(() => {
-		$ackee?.record('c358e68a-bfc4-435d-bbe8-e0726b93f785');
+		$ackee?.record('8650a19f-ee96-4325-aa17-ca264d593edd');
 	});
 
 	onMount(() => {

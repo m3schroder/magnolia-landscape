@@ -11,6 +11,9 @@
 
 	currentNav.subscribe((val) => {
 		hidden = val === 'quote' ? false : true;
+		if (val === 'quote') {
+			$ackee?.action('5ff9b458-91e5-4111-836c-82abdee1543a', { key: 'Opened', value: 1 });
+		}
 	});
 
 	$: handleService = (i: number) => {
@@ -59,7 +62,7 @@
 					services.forEach((s) => {
 						if (s[1]) data.append('services[]', s[0].toString());
 					});
-					$ackee?.action('66a59fbe-25af-46fd-a5b9-b42d74bbf598', { key: 'Sent', value: 1 });
+					$ackee?.action('5ff9b458-91e5-4111-836c-82abdee1543a', { key: 'Sent', value: 1 });
 					return async ({ result, update }) => {
 						loading = false;
 						update();
