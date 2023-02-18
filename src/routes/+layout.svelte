@@ -14,16 +14,11 @@
 	import ContactList from '@ui/ContactList.svelte';
 
 	afterNavigate(() => {
-		$ackee?.record('c358e68a-bfc4-435d-bbe8-e0726b93f785');
-	});
-	onMount(() => {
-		ackee.set(
-			ackeeTracker.create('https://stats.doubleshot.dev', {
-				detailed: true,
-				ignoreLocalhost: false,
-				ignoreOwnVisits: false
-			})
-		);
+		const ackee = ackeeTracker.create('https://stats.doubleshot.dev', {
+			detailed: false,
+			ignoreLocalhost: false
+		});
+		ackee.record('c358e68a-bfc4-435d-bbe8-e0726b93f785');
 	});
 	let topLevel: HTMLElement;
 	afterUpdate(() => {
