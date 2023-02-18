@@ -7,7 +7,10 @@
 
 <svelte:head>
 	<title>Drainage & Grading</title>
-	<meta name="Easy Grading and Drainage" />
+	<meta
+		name="Easy Grading and Drainage"
+		content="Drainage Solutions for your property in Middle Tennessee. Our experts provide drainage assessments, installations, and repairs to prevent water damage and flooding. Contact us for a free consultation"
+	/>
 </svelte:head>
 
 <PageTitle

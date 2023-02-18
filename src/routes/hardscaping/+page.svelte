@@ -6,7 +6,10 @@
 
 <svelte:head>
 	<title>Hardscaping</title>
-	<meta name="Hardscaping in Brentwood and Franklin" />
+	<meta
+		name="Hardscaping in Brentwood and Franklin"
+		content="Transform your outdoor space with professional Hardscaping services. We design, install and maintain beautiful patios, retaining walls, walkways and more. Discover our portfolio and get a free quote today."
+	/>
 </svelte:head>
 
 <PageTitle title="Hardscaping" message="Outdoor Living Redefined" />

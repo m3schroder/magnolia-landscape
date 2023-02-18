@@ -7,7 +7,10 @@
 
 <svelte:head>
 	<title>Pressure Washing</title>
-	<meta name="Commercial Pressure Washing Services" />
+	<meta
+		name="Commercial Pressure Washing Services"
+		content="Restore the beauty of your property with professional pressure washing services. Our team removes dirt, grime, and stains from surfaces, including siding, decks, driveways, and sidewalks"
+	/>
 </svelte:head>
 
 <PageTitle title="Pressure Washing" />

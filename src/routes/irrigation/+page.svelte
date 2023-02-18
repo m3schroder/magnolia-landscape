@@ -7,7 +7,10 @@
 
 <svelte:head>
 	<title>Irrigation</title>
-	<meta name="Expert irrigation installations" />
+	<meta
+		name="Expert irrigation installations"
+		content="Keep your lawn and garden healthy with expert outdoor irrigation services. Our team installs and maintains custom sprinkler systems, drip irrigation, and drainage solutions for optimal water management. Contact us for a free consultation."
+	/>
 </svelte:head>
 
 <PageTitle title="Irrigation" />

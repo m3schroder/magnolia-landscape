@@ -7,7 +7,10 @@
 
 <svelte:head>
 	<title>Snow Services</title>
-	<meta name="Snow services in Franklin and Brentwood" />
+	<meta
+		name="Snow services in Franklin and Brentwood"
+		content="Stay safe and warm this winter with reliable snow services. Our team provides snow removal, de-icing, and winter maintenance for commercial and residential properties."
+	/>
 </svelte:head>
 
 <PageTitle title="Snow Removal" />

@@ -9,7 +9,10 @@
 
 <svelte:head>
 	<title>Magnolia Valley Landscape</title>
-	<meta name="Home page for magnolia valley" />
+	<meta
+		name="Home page for magnolia valley"
+		content="Transform your outdoor space with our expert landscaping, lawncare, hardscaping, and outdoor irrigation services. We create and maintain beautiful and functional landscapes to enhance your property. Contact us today for a free consultation."
+	/>
 	<link rel="preload" as="image" href={'/great lawn.webp'} />
 </svelte:head>
 
