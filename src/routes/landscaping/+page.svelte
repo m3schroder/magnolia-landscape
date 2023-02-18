@@ -9,7 +9,7 @@
 <svelte:head>
 	<title>Landscaping</title>
 	<meta
-		name="Beautiful Landscaping and Design in Brentwood and Franklin"
+		name="description"
 		content="Create the perfect outdoor oasis with professional landscaping services. Our team designs, installs and maintains beautiful landscapes, including trees, shrubs, flowers, and hardscaping features. Contact us for a free consultation."
 	/>
 </svelte:head>

@@ -10,7 +10,7 @@
 	<title>Lawn Care</title>
 	<meta name="Efficient lawncare in Frankling and Brentwood Tennessee" />
 	<meta
-		name="Lawn Care"
+		name="description"
 		content="Get a lush, green lawn with expert lawncare services. Our team provides mowing, fertilization, weed control, aeration, and more for a healthy and vibrant lawn. Contact us for a free estimate."
 	/>
 </svelte:head>

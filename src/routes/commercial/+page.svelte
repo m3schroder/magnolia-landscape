@@ -9,9 +9,10 @@
 <svelte:head>
 	<title>Commercial Service</title>
 	<meta
-		name="Commercial Landscaping Services in Brentwood and Franklin"
+		name="description"
 		content="Magnolia valley does commercial work for clients all of middle Tennessee, this includes all of our residential services and more!"
 	/>
+	<meta name="Commercial Landscaping Services in Brentwood and Franklin" />
 	<link rel="preload" as="image" href={'/commercial-work.webp'} />
 </svelte:head>
 
