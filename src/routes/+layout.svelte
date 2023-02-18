@@ -13,6 +13,7 @@
 	import Footer from '@ui/Footer.svelte';
 	import ContactList from '@ui/ContactList.svelte';
 	import logo from '@static/magnolia-logo.png?w=400&webp';
+	import logoTitle from '@static/magnolia-logo.png?w=200&webp';
 
 	afterNavigate(() => {
 		$ackee?.record('8650a19f-ee96-4325-aa17-ca264d593edd');
@@ -40,6 +41,7 @@
 
 <svelte:head>
 	<link rel="preload" as="image" href={'/awesome_sealing.webp'} />
+	<link rel="icon" href={logoTitle} />
 </svelte:head>
 <main
 	class="flex flex-col  items-center h-screen overflow-y-auto overflow-x-hidden"
