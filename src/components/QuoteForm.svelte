@@ -80,7 +80,7 @@
 					<FormInput label={'City'} id={'city'} />
 				</div>
 				<FormInput label={'Email'} id={'email'} type={'email'} />
-				<Label class="text-neutral-500 mb-1">Select Services</Label>
+				<Label class="text-neutral-500 mb-1">Select Service(s)</Label>
 				<div class="flex flex-row flex-wrap gap-4">
 					{#each services as service, i}
 						<Button
