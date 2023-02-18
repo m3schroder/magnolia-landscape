@@ -3,6 +3,7 @@
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
+	import image from '../../static/dopeyard.webp?w=1000';
 </script>
 
 <svelte:head>
@@ -11,7 +12,7 @@
 </svelte:head>
 
 <PageTitle title="Landscaping Design & Installation" />
-<Card class="card-image" img="dopeyard.webp" alt="Great landscaping">
+<Card class="card-image" img={image} alt="Great landscaping">
 	<p>
 		<strong>Your outdoor living area is an extension of your home.</strong>
 		<br class="break-space" />

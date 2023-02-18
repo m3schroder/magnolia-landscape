@@ -3,6 +3,7 @@
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
+	import image from '../../static/dopeyard.webp?w=1000';
 </script>
 
 <svelte:head>
@@ -15,7 +16,7 @@
 </svelte:head>
 
 <PageTitle title="Lawn Care" />
-<Card class="card-image" img="dopeyard.webp" alt="Great landscaping">
+<Card class="card-image" img={image} alt="Great landscaping">
 	<p>
 		Magnolia Valley is your trusted provider of lawn care and landscaping services in the Franklin
 		and Brentwood areas of Tennessee. Our team of experienced professionals is dedicated to helping

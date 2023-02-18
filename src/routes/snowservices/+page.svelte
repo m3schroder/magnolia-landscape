@@ -2,6 +2,7 @@
 	import ActionList from '@ui/ActionList.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
+	import image from '../../static/snow-removal.webp?w=900';
 </script>
 
 <svelte:head>
@@ -11,7 +12,7 @@
 
 <PageTitle title="Snow Removal" />
 
-<Card class="card-image" img="/snow-removal.webp">
+<Card class="card-image" img={image}>
 	<p>
 		Don't get buried in snow this season! We offer both residential, and commercial snow removal
 		services to ensure your home or property is safe, accessible, and snow-free! No job is too big.

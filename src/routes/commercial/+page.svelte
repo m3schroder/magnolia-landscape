@@ -3,7 +3,7 @@
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
-	import Image from 'svelte-image';
+	import image from '../../static/commercial-work.webp?w=1200';
 </script>
 
 <svelte:head>
@@ -14,8 +14,7 @@
 
 <PageTitle title="Commercial Services" />
 
-<Card class="card-image" img="/commercial-work.webp">
-	<Image />
+<Card class="card-image" img={image}>
 	<p>
 		<strong>The one stop shop for all of your commercial landscape maintenance</strong>
 		We have experts for all of your commercial property needs.

@@ -3,16 +3,17 @@
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import { ArrowSmallRight } from 'svelte-heros-v2';
 	import links from '$lib/links';
-	import PageTitle from '@ui/PageTitle.svelte';
 	export const label = undefined;
+	import greatLawn from '../static/greatlawn.webp?w=1200';
 </script>
 
 <svelte:head>
 	<title>Magnolia Valley Landscape</title>
 	<meta name="Home page for magnolia valley" />
+	<link rel="preload" as="image" href={'/great lawn.webp'} />
 </svelte:head>
 
-<Card img="/great lawn.webp" class="card-image ">
+<Card img={greatLawn} class="card-image object-contain">
 	<h5 class="lg:text-2xl text-xl mt-2 lg:mb-12 mb-5 uppercase flex flex-col gap-2 text-center">
 		<h1 class="uppercase lg:text-5xl text-3xl font-bold">Landscaping</h1>
 		<Hr divClass="items-start max-w-sm mb-3" />

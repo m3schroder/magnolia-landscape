@@ -2,6 +2,7 @@
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card, Hr } from 'flowbite-svelte';
+	import image from '../../static/sprinkler.webp?w=800';
 </script>
 
 <svelte:head>
@@ -11,7 +12,7 @@
 
 <PageTitle title="Irrigation" />
 
-<Card class="card-image" img="/sprinkler.webp">
+<Card class="card-image" img={image}>
 	<p>
 		No matter how many hours you spend caring for your yard, you're still always concerned with
 		whether or not your plants are receiving enough water.

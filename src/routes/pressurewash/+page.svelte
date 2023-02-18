@@ -2,6 +2,7 @@
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
+	import image from '../../static/powerwashing.webp?w=1000';
 </script>
 
 <svelte:head>
@@ -10,7 +11,7 @@
 </svelte:head>
 
 <PageTitle title="Pressure Washing" />
-<Card class="card-image" img="powerwashing.webp">
+<Card class="card-image" img={image}>
 	<p>
 		Your investment properties or commercial spaces need to be taken care of by a professional. Let
 		us take care of your exterior so you know that if your tenants step outside, the environment

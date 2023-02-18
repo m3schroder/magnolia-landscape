@@ -2,6 +2,7 @@
 	import ActionList from '@ui/ActionList.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
+	import image from '../../static/grading.webp?w=1000';
 </script>
 
 <svelte:head>
@@ -14,7 +15,7 @@
 	message="Look toward Magnolia Valley Landscape for all of your grading and yard Drainage issues"
 />
 
-<Card class="card-image" img="/grading.webp">
+<Card class="card-image" img={image}>
 	<p>
 		Improper grading and poor drainage systems can cause serious foundational problems to your house
 		down the road. Let one of our certified experts inspect your property and provide a solution to

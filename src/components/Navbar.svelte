@@ -2,6 +2,8 @@
 	import { page } from '$app/stores';
 	import { currentNav } from '@lib/store';
 	import links from '@lib/links';
+	import image from '../static/magnolia-logo.png?w=200';
+	import * as Icon from 'svelte-awesome-icons';
 	import {
 		Button,
 		Navbar,
@@ -12,7 +14,7 @@
 		DropdownItem,
 		Chevron
 	} from 'flowbite-svelte';
-	import { Bars3, Phone, ArrowDown, ChatBubbleBottomCenter } from 'svelte-heros-v2';
+	import { Bars3, Phone, ArrowDown, ChatBubbleBottomCenter, Envelope } from 'svelte-heros-v2';
 
 	export let navHeight;
 	$: currentRoute = $page.route.id;
@@ -32,9 +34,9 @@
 	id="navbar"
 >
 	<NavBrand href="/" class="h-12">
-		<img src="magnolia-logo.png" class="mr-3 !h-full sm:h-9" alt="Magnolia Logo" />
+		<img src={image} class="object-contain mr-3 !h-full sm:h-9" alt="Magnolia Logo" />
 	</NavBrand>
-	<NavUl ulClass="flex gap-8 text-md">
+	<NavUl ulClass="flex gap-8 text-md items-center justify-center">
 		<!-- <NavLi active={currentRoute == '/contact'} href="/contact">About</NavLi> -->
 		<NavLi id="nav-menu1" class=" cursor-pointer"><Chevron aligned>Services</Chevron></NavLi>
 		<NavLi class="cursor-pointer" href="/commercial">Commercial</NavLi>
@@ -48,6 +50,22 @@
 			{/each}
 		</Dropdown>
 	</NavUl>
+	<div class="flex flex-row gap-5">
+		<a
+			href="https://www.facebook.com/magnoliavalleylandscapes"
+			rel="noopener noreferrer"
+			target="_blank"
+			class="appearance-none no-underline"
+		>
+			<Icon.SquareFacebookBrand class="text-blue hover:text-blue-800 text-lg" size={'30'} />
+		</a>
+		<a href="tel:615-796-5388" class="appearance-none no-underline">
+			<Icon.SquarePhoneSolid class="text-blue text-lg hover:text-blue-800" size={'30'} />
+		</a>
+		<a href="mailto:magnoliavalleylandscape@gmail.com" class="appearance-none no-underline">
+			<Icon.SquareEnvelopeSolid class="text-blue text-lg hover:text-blue-800" size={'30'} />
+		</a>
+	</div>
 </Navbar>
 <!-- border-1 border-secondary-dark bg-paper border-opacity-50 shadow-neu -->
 <div
