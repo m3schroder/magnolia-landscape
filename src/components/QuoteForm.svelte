@@ -44,7 +44,7 @@
 	{:else}
 		<Card
 			color="alternative"
-			class={`bg-paper relative shadow-neu mb-4 duration-200 border-1 border-secondary-dark !max-w-xl overflow-auto max-h-[85vh] h-fit`}
+			class={`bg-paper relative shadow-neu mb-4 duration-200 border-1 border-secondary-dark !max-w-xl overflow-auto max-h-[75vh] xs:max-h-[85vh] h-fit`}
 		>
 			<div
 				class={`w-full transition-[opacity] duration-300 ${
