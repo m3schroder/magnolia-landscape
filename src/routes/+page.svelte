@@ -4,7 +4,7 @@
 	import { ArrowSmallRight } from 'svelte-heros-v2';
 	import links from '$lib/links';
 	export const label = undefined;
-	import greatLawn from '@static/greatlawn.webp?w=1000';
+	import greatLawn from '@static/greatlawn.webp?w=1000&jpeg';
 </script>
 
 <svelte:head>
@@ -14,7 +14,6 @@
 		content="Transform your outdoor space with our expert landscaping, lawncare, hardscaping, and outdoor irrigation services. We create and maintain beautiful and functional landscapes to enhance your property. Contact us today for a free consultation."
 	/>
 	<meta name="Home page for magnolia valley" />
-	<link rel="preload" as="image" href={'/great lawn.webp'} />
 </svelte:head>
 
 <Card img={greatLawn} class="card-image object-contain">
@@ -58,3 +57,6 @@
 		>Lean more <ArrowSmallRight /></Button
 	>
 </Card>
+
+<style>
+</style>
