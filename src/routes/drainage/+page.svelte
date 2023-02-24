@@ -2,7 +2,7 @@
 	import ActionList from '@ui/ActionList.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
-	import image from '@static/grading.webp?w=1000';
+	import image from '@static/grading.webp?w=1000&jpeg';
 </script>
 
 <svelte:head>

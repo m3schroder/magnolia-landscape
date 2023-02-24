@@ -2,7 +2,7 @@
 	import ActionList from '@ui/ActionList.svelte';
 	import PageTitle from '@ui/PageTitle.svelte';
 	import { Card } from 'flowbite-svelte';
-	import image from '@static/snow-removal.webp?w=900';
+	import image from '@static/snow-removal.webp?w=900&jpeg';
 </script>
 
 <svelte:head>
