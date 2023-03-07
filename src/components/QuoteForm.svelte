@@ -12,7 +12,7 @@
 	currentNav.subscribe((val) => {
 		hidden = val === 'quote' ? false : true;
 		if (val === 'quote') {
-			$ackee?.action('5ff9b458-91e5-4111-836c-82abdee1543a', { key: 'Opened', value: 1 });
+			$ackee?.action('e0b6c496-a4cc-4585-95f6-bbb48dba789b', { key: 'Click', value: 1 });
 		}
 	});
 
@@ -62,7 +62,7 @@
 					services.forEach((s) => {
 						if (s[1]) data.append('services[]', s[0].toString());
 					});
-					$ackee?.action('5ff9b458-91e5-4111-836c-82abdee1543a', { key: 'Sent', value: 1 });
+					$ackee?.action('5ff9b458-91e5-4111-836c-82abdee1543a', { key: 'Click', value: 1 });
 					return async ({ result, update }) => {
 						loading = false;
 						update();
