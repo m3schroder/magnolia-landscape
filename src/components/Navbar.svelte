@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import { currentNav } from '@lib/store';
 	import links from '@lib/links';
+	// @ts-ignore
 	import image from '@static/magnolia-logo.png?w=200';
 	import * as Icon from 'svelte-awesome-icons';
 	import {
@@ -40,6 +41,7 @@
 		<!-- <NavLi active={currentRoute == '/contact'} href="/contact">About</NavLi> -->
 		<NavLi id="nav-menu1" class=" cursor-pointer"><Chevron aligned>Services</Chevron></NavLi>
 		<NavLi class="cursor-pointer" href="/commercial">Commercial</NavLi>
+		<NavLi class="cursor-pointer" href="/blog">Blog</NavLi>
 		<NavLi on:click={() => currentNav.set('quote')} class="cursor-pointer">Get Quote</NavLi>
 		<Dropdown triggeredBy="#nav-menu1" class="w-fit z-20 p-2">
 			{#each links as Item}

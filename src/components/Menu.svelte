@@ -2,7 +2,7 @@
 	import Drawer from '@ui/Drawer.svelte';
 	import { currentNav } from '@lib/store';
 	import { Button, Card } from 'flowbite-svelte';
-	import links from '$lib/links';
+	import links from '@lib/links';
 </script>
 
 <Drawer wrapping="menu">
@@ -19,6 +19,8 @@
 			>
 		{/each}
 		<Button href="/" on:click={() => currentNav.update((val) => (val = undefined))}>Home</Button>
+		<Button href="/blog" on:click={() => currentNav.update((val) => (val = undefined))}>Blog</Button
+		>
 		<Button on:click={() => currentNav.update((val) => (val = 'quote'))}>Get Quote</Button>
 	</Card>
 </Drawer>

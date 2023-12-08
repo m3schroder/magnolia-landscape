@@ -12,7 +12,9 @@
 	import QuoteForm from '@ui/QuoteForm.svelte';
 	import Footer from '@ui/Footer.svelte';
 	import ContactList from '@ui/ContactList.svelte';
+	//@ts-ignore;
 	import logo from '@static/magnolia-logo.png?w=400&webp';
+	//@ts-ignore;
 	import logoTitle from '@static/magnolia-logo.png?w=200&webp';
 
 	afterNavigate(() => {
@@ -40,7 +42,7 @@
 </script>
 
 <svelte:head>
-	<link rel="preload" as="image" href={'/awesome_sealing.webp'} />
+	<link as="image" href={'/awesome_sealing.webp'} />
 	<link rel="icon" href={logoTitle} />
 </svelte:head>
 <main

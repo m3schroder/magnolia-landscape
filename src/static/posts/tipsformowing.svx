@@ -1,0 +1,11 @@
+<script context='module'>
+	export let metadata= {
+		title: 'Tips for Mowing',
+		desc: 'Supeoiavklndfvaodfi adkjfga adfhgjd fdf ojdfagfp',
+		isPublished: true,
+		publishedOn: new Date(),
+		updatedOn: new Date(),
+	}
+</script>
+
+A dog's nose is #[] unique, just like the fingerprints of a human.

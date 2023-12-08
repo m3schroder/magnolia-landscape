@@ -2,8 +2,9 @@
 	import { Card, Button, Hr } from 'flowbite-svelte';
 	import FreeQuote from '@ui/FreeQuote.svelte';
 	import { ArrowSmallRight } from 'svelte-heros-v2';
-	import links from '$lib/links';
+	import links from '@lib/links';
 	export const label = undefined;
+	// @ts-ignore
 	import greatLawn from '@static/greatlawn.webp?w=1000&jpeg';
 </script>
 
