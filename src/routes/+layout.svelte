@@ -3,7 +3,7 @@
 	import { afterUpdate, onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
 	import * as ackeeTracker from 'ackee-tracker';
-	import { Analytics } from '@vercel/analytics/sveltekit';
+	import { inject } from '@vercel/analytics';
 
 	import '../app.postcss';
 	import { ackee } from '$lib/store';
@@ -40,6 +40,7 @@
 	});
 
 	$: navHeight = 60;
+	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <svelte:head>
