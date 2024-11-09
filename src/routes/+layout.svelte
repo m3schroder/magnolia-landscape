@@ -3,6 +3,7 @@
 	import { afterUpdate, onMount } from 'svelte';
 	import { afterNavigate } from '$app/navigation';
 	import * as ackeeTracker from 'ackee-tracker';
+	import { Analytics } from '@vercel/analytics/sveltekit';
 
 	import '../app.postcss';
 	import { ackee } from '$lib/store';
@@ -45,8 +46,9 @@
 	<link as="image" href={'/awesome_sealing.webp'} />
 	<link rel="icon" href={logoTitle} />
 </svelte:head>
+<Analytics />
 <main
-	class="flex flex-col  items-center h-screen overflow-y-auto overflow-x-hidden"
+	class="flex flex-col items-center h-screen overflow-y-auto overflow-x-hidden"
 	bind:this={topLevel}
 >
 	<content
@@ -62,12 +64,12 @@
 		</a>
 		<slot />
 		<div
-			class="flex lg:flex-row flex-col lg:items-start  lg:justify-center items-center gap-9 lg:w-full lg:max-w-3xl"
+			class="flex lg:flex-row flex-col lg:items-start lg:justify-center items-center gap-9 lg:w-full lg:max-w-3xl"
 		>
 			<Map />
 			<Footer />
 		</div>
-		<div class="hidden items-center lg:flex justify-center gap-7 ">
+		<div class="hidden items-center lg:flex justify-center gap-7">
 			<ContactList />
 		</div>
 	</content>
