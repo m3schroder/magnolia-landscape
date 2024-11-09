@@ -48,7 +48,6 @@
 	<link as="image" href={'/awesome_sealing.webp'} />
 	<link rel="icon" href={logoTitle} />
 </svelte:head>
-<Analytics />
 <main
 	class="flex flex-col items-center h-screen overflow-y-auto overflow-x-hidden"
 	bind:this={topLevel}
