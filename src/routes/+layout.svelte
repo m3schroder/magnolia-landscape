@@ -12,6 +12,7 @@
 	import Menu from '@ui/Menu.svelte';
 	import QuoteForm from '@ui/QuoteForm.svelte';
 	import Footer from '@ui/Footer.svelte';
+	import { dev } from '$app/environment';
 	import ContactList from '@ui/ContactList.svelte';
 	//@ts-ignore;
 	import logo from '@static/magnolia-logo.png?w=400&webp';
